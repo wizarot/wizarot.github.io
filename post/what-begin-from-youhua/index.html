@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.15" />
 
-  <title>hello world &middot; Wizarot Site 记录点平时写的东西</title>
+  <title>优化应从设计逻辑开始 &middot; Wizarot Site 记录点平时写的东西</title>
 
   
   
@@ -175,7 +175,7 @@
 
 
 <div class="header">
-  <h1>hello world</h1>
+  <h1>优化应从设计逻辑开始</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -184,7 +184,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>11 Mar 2016, 11:51</time>
+    <time>26 Mar 2016, 12:02</time>
   </div>
 
   
@@ -192,36 +192,55 @@
   
   
   
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
-    
-      <a class="post-taxonomy-topic" href="http://wizarot.me/topics/%E9%9A%8F%E7%AC%94">随笔</a>
-    
-  </div>
-  
   
 
+  
+  
+  
   
 
 </div>
 
   
 
-<h3 id="hello-world:aa77bbfd89a7b0ff10def205b9c08d51">Hello world</h3>
+<h2 id="优化应从设计逻辑开始:a1ccfd64156273c290fca2c95662643f">优化应从设计逻辑开始</h2>
 
-<p>再写一次,希望可以正常提交</p>
+<p>业务逻辑思路清晰就最好了,尤其是开始时候就和程序员从高并发角度做准备,整体可以给业务带来比较小的压力,或者功能比较好拆分,都能在项目开始阶段把问题解决掉.</p>
+
+<blockquote>
+<p>当然这是最理想状态,通常做不到.</p>
+</blockquote>
+
+<p>那么就要根据已有业务逻辑,尽可能将业务规划为容易拆分的模块,理想状况是,将来哪里成为瓶颈,哪里直接加台机器装上对应逻辑就解决.</p>
+
+<blockquote>
+<p>这也是理想状态,没人先知先觉,但有经验的架构师可以预先处理掉大部分问题.</p>
+</blockquote>
+
+<p>接着就是根据实际情况解决问题,这个就要看,实际业务上,究竟哪里是瓶颈.</p>
+
+<p>一般说来,出问题的就几种情况:</p>
+
+<ul>
+<li>1.程序员写的东西本身不过关,我见过有人在业务里递归查数据库的,还不限制层数,在本地跑的好好的,一上线,cpu爆表直接挂掉.</li>
+<li>2.访问过多,这也可能是静态文件太多引起的,或者带宽被占满了.那么就需要考虑CDN或者把一些固定文件资源分配到专门服务器上面去.</li>
+<li>3.数据库顶不住了.这个也非常常见,一般就是单表数据量太大引起的. 或者还不算大但查询很慢这类问题一般是索引不足或者过度索引造成的.处理完还要看看是否可以优化数据库配置,运维有时候只负责数据库跑起来,其余优化配置全不管.接着还不行就考虑加缓存,增加一层或者干脆换成 Nosql数据库,但这个就需要看具体业务逻辑才可以.</li>
+</ul>
+
+<p>我遇到的问题,一般在这几个层面都可以解决的掉了.所以更高深的还在学习中.
+抛开具体业务逻辑也只能说些比较空泛的了,所有抛开业务逻辑的优化,并发都是伪命题.</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1 pure-u-md-1-2">
     
+    <nav class="prev">
+      <a href="http://wizarot.me/post/how-to-talk-with-eachother/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>两个人应该怎么好好说话</a>
+    </nav>
+    
   </div>
   <div class="pure-u-1 pure-u-md-1-2">
-    
-    <nav class="next">
-      <a href="http://wizarot.me/post/info-geek/">记录随想 - 三个习惯帮你变成信息极客<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
-    </nav>
     
   </div>
 </div>
