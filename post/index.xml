@@ -5,10 +5,46 @@
     <link>http://wizarot.me/post/</link>
     <description>Recent content in Posts on Wizarot Site 记录点平时写的东西</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
+    <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Mar 2016 12:22:53 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Mar 2016 11:12:32 +0800</lastBuildDate>
     <atom:link href="http://wizarot.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>未来,统计学很有用</title>
+      <link>http://wizarot.me/post/we-can-study-statistical/</link>
+      <pubDate>Mon, 28 Mar 2016 11:12:32 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/we-can-study-statistical/</guid>
+      <description>
+
+&lt;h1 id=&#34;未来-统计学很有用:b6907cb1e84ba1e6d22c56c2ecab811d&#34;&gt;未来,统计学很有用&lt;/h1&gt;
+
+&lt;h2 id=&#34;有本书-赤裸裸的统计学:b6907cb1e84ba1e6d22c56c2ecab811d&#34;&gt;有本书  赤裸裸的统计学&lt;/h2&gt;
+
+&lt;p&gt;统计学是门枯燥的学科了.但是没准以后这学科就会像现在汽车,电脑等一样成为下一个10年新技术的入口.
+那么,统计学到底有什么用呢?究竟应当怎么用呢?&lt;/p&gt;
+
+&lt;p&gt;例如:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;可以协助警察来管理治安.    例如美国某地警察发现大多数暴力犯罪都是团伙作案,并且时间地点分布都很有规律.于是就请了数学家,人类科学家,行为学家一起分析这些情况. 看看设计一套电脑程序来预测下次犯罪的时间和地点,结果他们还真的成了!&lt;/li&gt;
+&lt;li&gt;可以快速帮你找到商场入口,快速判断学校里学生的成绩等等.. 还记得统计中的 正态分布 吗?  数据是对称分布在平均值附近的,你通过正确的样本抽样方法,大约选100个人的成绩分析下,就能知道整个学校成绩了.&lt;/li&gt;
+&lt;li&gt;可以协助医学找出病因     因为医学无论是现代医学,或者是传统医学,实际上一直都在做一件事儿.那就是对病及其治疗方法进行归因. 传统的归因于五行八卦,现代的尝试归因于遗传,病毒之类. 能够通过数学统计帮助查找事物之间的关联性,十分有效.(这里不得不多说一句,请时刻注意,有关联的事物,未必有因果关系!而统计可能只能找出关联,不一定可以正确找到因果.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;但是统计学本身也有它的问题需要注意!
+统计学通过数据说话,看起来很精确,那么是不是统计结果就可信呢? 如果你没有抓对统计方法的要义,那么很可能被结果欺骗.&lt;/p&gt;
+
+&lt;p&gt;我们作为程序员,该怎么办?
+&amp;gt; 首先,要至少知道,这些经典算法,是什么,它们可以做什么
+&amp;gt; 其次,应该尝试在一些私人项目中使用它们进行一点小小尝试.例如之前有个哥们爬了一些知乎的数据,简单统计了下人员性别,学历等分布情况,就做得不错!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;统计学,经济学,逻辑学&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;可能不会学了以后有什么立竿见影的效果,但它们都给我们一个新的看问题的视角,让我可以看待问题更加客观.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>要想成绩好,课外运动少不了</title>
