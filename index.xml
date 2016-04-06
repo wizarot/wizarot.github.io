@@ -7,8 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 05 Apr 2016 10:25:38 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 Apr 2016 14:14:37 +0800</lastBuildDate>
     <atom:link href="http://wizarot.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>年龄不是你落后的借口</title>
+      <link>http://wizarot.me/post/2016-04-06/</link>
+      <pubDate>Wed, 06 Apr 2016 14:14:37 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/2016-04-06/</guid>
+      <description>
+
+&lt;h2 id=&#34;吴晓波-年龄不是你落后的借口:c5f529f63bc9dfd16f035f4d9ae1f3cb&#34;&gt;吴晓波:年龄不是你落后的借口&lt;/h2&gt;
+
+&lt;p&gt;吴晓波说,很多现在的70后80后觉得自己跟不上这个时代了.但那绝对不是年龄的问题,而是这些人用的工具跟不上时代了.
+吴晓波说他自己,现在能跟上时代的潮流,靠的就是一种工具,叫电脑.有了这个东西,大大提高了写作速度,并且通过互联网获得了非常多的信息.
+一代人对一代人的淘汰,从来不是年龄.每一代人使用的工具更有说服力.对人不仅是这样,对一个行业来说也是如此,如果不会使用新工具,那么可能整个行业都会被淘汰掉.&lt;/p&gt;
+
+&lt;p&gt;IBM最近发明了一种人工智能学习工具叫 沃森,听说它学习一个普通医生的知识只需要17秒.
+一旦新的行业引入了新的工具,可能之前积累的一切经验和知识都是要被重新定义的.&lt;/p&gt;
+
+&lt;p&gt;淘汰人的从来都知识工具而不是年龄,如果你在竞争中赢了,那是你比别人更乐于接受新的工具.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>未来人类可能就是一堆数据</title>
@@ -438,35 +459,6 @@
 &lt;p&gt;要是真的有,那么,是否可以研究一台可以造鬼的机器出来呢?
 这可是鬼屋和恐怖游戏的福音啊!嘿嘿嘿~
 可惜,我觉得成功可能性真的不大,感觉是个故事而已.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>记录随想 - 三个习惯帮你变成信息极客</title>
-      <link>http://wizarot.me/post/info-geek/</link>
-      <pubDate>Thu, 24 Mar 2016 15:04:04 +0800</pubDate>
-      
-      <guid>http://wizarot.me/post/info-geek/</guid>
-      <description>
-
-&lt;h2 id=&#34;笔记-三个习惯帮你变成信息极客:1ac8aff40ec9256f61d3edf3a2651297&#34;&gt;笔记 三个习惯帮你变成信息极客&lt;/h2&gt;
-
-&lt;h3 id=&#34;作者-万维刚-智识分子:1ac8aff40ec9256f61d3edf3a2651297&#34;&gt;作者: 万维刚 智识分子&lt;/h3&gt;
-
-&lt;h3 id=&#34;查询高级信息的三个手段:1ac8aff40ec9256f61d3edf3a2651297&#34;&gt;查询高级信息的三个手段:&lt;/h3&gt;
-
-&lt;p&gt;1.阅读学术论文:&lt;br /&gt;
-    论文是知识的最前沿,很多专业论文或摘要普通人都是可以看懂的.(不过我觉得可能英语更重要) 方法可以通过学术的搜索引擎:Google Scholar和百度学术,科技新闻网站，比如Solidot（给极客看的中文资讯，强烈推荐）、果壳网和EurekAlert!是发现值得注意的新研究的好地方.&lt;/p&gt;
-
-&lt;p&gt;2.直接阅读原始数据:&lt;br /&gt;
-    互联网上有很多优质的数据资源。Wolfram Alpha网站可以调阅和可视化有关当今世界的很多基本数据；美国政府有一个专门的数据网站Data.gov，其中有从经济到教育、科研各种数据库；而USASpending.gov则列举了各项政府花费的数据，有心人可以拿这些数据搞出很有意思的东西来。     发觉这些可靠的数据来源,是一项基本工作&lt;/p&gt;
-
-&lt;p&gt;3.主动采集和分析数据:&lt;br /&gt;
-    抛开作者的例子不论,最近有些同学使用爬虫技术取得一些大网站的公开数据,进行简单统计的方式挺有启发的.很多时候,有意思的内容就包含在一些杂乱无章的公开信息里,需要有心人的发掘. 个人数据的发掘和记录,最重要的是有持续性和方便性.可以始终如一的记录并分析才有意义.量化自我实在也是一个有意思的玩法.&lt;/p&gt;
-
-&lt;p&gt;文章中推荐这个东西 ，Daytum[10]是个现代化的工具。更轻量级的工具包括YAST和Slimtimer。如果你只想记录一下自己在计算机上都干了什么，RescueTime非常方便。类似的工具相当多，Sleep Time可以通过手机震动监督人的睡眠质量，mint.com 则能监督人的花钱习惯，等等。&lt;/p&gt;
-
-&lt;p&gt;总之,这样做的最终目的不要忘记,使用这些方法,可以帮助人的评判性思维成长.&lt;/p&gt;
 </description>
     </item>
     
