@@ -7,8 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Apr 2016 19:52:10 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 11 Apr 2016 11:28:03 +0800</lastBuildDate>
     <atom:link href="http://wizarot.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>削弱意志力的四大杀手</title>
+      <link>http://wizarot.me/post/2016-04-11/</link>
+      <pubDate>Mon, 11 Apr 2016 11:28:03 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/2016-04-11/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;意志力: 抑制冲动和欲望的能力. 这个东西并不是一成不变的,而是有时候管用有时候不管用.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;那么为什么意志力有时候会失灵呢?有以下四个原因:&lt;/p&gt;
+
+&lt;p&gt;1.情感上的疼痛: 压力,沮丧,懊恼,焦虑. 为了逃避这些创伤,人可能就会下意识的退缩.通过娱乐放纵逃避痛苦. 酗酒,贪睡,暴饮暴食之类的. 这是丧失意志力的最主要原因. 所以要随时提醒自己,千万不要陷入心理伤痛的恶性循环. 别整天想着逃避,因为逃避会逐步侵蚀意志力.&lt;/p&gt;
+
+&lt;p&gt;2.自我剥夺: 就是长期抑制自己的欲望. 长期的压抑自己的欲望,后果就是一旦有机会,欲望就会拼命爆发. 所以不要对自己的意志力报太大的希望,指望它能一直战胜欲望. 每隔一段时间就应当释放下压力. 例如减肥时候,可以少量适度吃点垃圾食品. 合理疏导自己的欲望才是正理.&lt;/p&gt;
+
+&lt;p&gt;3.可获得性: 所有削弱你意志力的东西,都在你舒适的家里. 那么久很容易放松自己了. 这样就要给自己造出一个荒岛,远离诱惑.&lt;/p&gt;
+
+&lt;p&gt;4.自我合理化和讨价还价: 在我们准备自我放纵的时候通常都会给自己的所作所为找各种借口,夸大合理性缩小不利后果. 自我欺骗和麻醉,自我讨价还价来曲解条款,先享受好处.  只有狠下心来,明确只有先履行义务,才能享受好处. 这样才能保持自己的意志力.&lt;/p&gt;
+
+&lt;h3 id=&#34;要做自己意志力的主人:d23c9c29fd2c7ff6c8cc5265a0ecfaa5&#34;&gt;要做自己意志力的主人.&lt;/h3&gt;
+</description>
+    </item>
     
     <item>
       <title>你只是自以为抓住了用户的需求</title>
@@ -324,43 +350,6 @@
 
 &lt;p&gt;很多运动明星都是学霸,例如足球明星罗本&amp;hellip;  详细可以自行谷歌
 反正是很有意思的,所以肌肉和大脑的成长并不冲突,大脑本身也是块肌肉,他们是互相促进的&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>优化应从设计逻辑开始</title>
-      <link>http://wizarot.me/post/what-begin-from-youhua/</link>
-      <pubDate>Sat, 26 Mar 2016 12:02:04 +0800</pubDate>
-      
-      <guid>http://wizarot.me/post/what-begin-from-youhua/</guid>
-      <description>
-
-&lt;h2 id=&#34;优化应从设计逻辑开始:a1ccfd64156273c290fca2c95662643f&#34;&gt;优化应从设计逻辑开始&lt;/h2&gt;
-
-&lt;p&gt;业务逻辑思路清晰就最好了,尤其是开始时候就和程序员从高并发角度做准备,整体可以给业务带来比较小的压力,或者功能比较好拆分,都能在项目开始阶段把问题解决掉.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;当然这是最理想状态,通常做不到.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;那么就要根据已有业务逻辑,尽可能将业务规划为容易拆分的模块,理想状况是,将来哪里成为瓶颈,哪里直接加台机器装上对应逻辑就解决.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;这也是理想状态,没人先知先觉,但有经验的架构师可以预先处理掉大部分问题.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;接着就是根据实际情况解决问题,这个就要看,实际业务上,究竟哪里是瓶颈.&lt;/p&gt;
-
-&lt;p&gt;一般说来,出问题的就几种情况:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1.程序员写的东西本身不过关,我见过有人在业务里递归查数据库的,还不限制层数,在本地跑的好好的,一上线,cpu爆表直接挂掉.&lt;/li&gt;
-&lt;li&gt;2.访问过多,这也可能是静态文件太多引起的,或者带宽被占满了.那么就需要考虑CDN或者把一些固定文件资源分配到专门服务器上面去.&lt;/li&gt;
-&lt;li&gt;3.数据库顶不住了.这个也非常常见,一般就是单表数据量太大引起的. 或者还不算大但查询很慢这类问题一般是索引不足或者过度索引造成的.处理完还要看看是否可以优化数据库配置,运维有时候只负责数据库跑起来,其余优化配置全不管.接着还不行就考虑加缓存,增加一层或者干脆换成 Nosql数据库,但这个就需要看具体业务逻辑才可以.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我遇到的问题,一般在这几个层面都可以解决的掉了.所以更高深的还在学习中.
-抛开具体业务逻辑也只能说些比较空泛的了,所有抛开业务逻辑的优化,并发都是伪命题.&lt;/p&gt;
 </description>
     </item>
     
