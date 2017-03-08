@@ -7,8 +7,51 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 07 Mar 2017 19:08:35 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Mar 2017 10:58:31 +0800</lastBuildDate>
     <atom:link href="http://wizarot.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</title>
+      <link>http://wizarot.me/post/2017-03-08/</link>
+      <pubDate>Wed, 08 Mar 2017 10:58:31 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/2017-03-08/</guid>
+      <description>
+
+&lt;h2 id=&#34;以后别跟我说什么只有myisam引擎才能用全文索引啊&#34;&gt;以后别跟我说什么只有MyISAM引擎才能用全文索引啊!&lt;/h2&gt;
+
+&lt;p&gt;总有人在问MyISAM和InnoDB的区别时,提出只有MyISAM引擎才能使用全文索引 (Full-text Index)&lt;/p&gt;
+
+&lt;p&gt;老实说,我经常在自己机器的MySql中InnoDB的表上面给text加全文索引来的.而且之前我google时候,真的也在mysql官方文档里看到过InnoDB使用全文索引的介绍.
+说实话,有一次我刚用完全文索引,就在被人面试的时候问过类似问题.哎,当时面试那位一脸鄙视的样子深深伤害啊! 好长时间一直都没忘记.
+话说,InnoDB真的可以用全文索引,为啥中国程序员圈子里就把这个只有MyISAM引擎才能用全文索引当做铁律还一直各种面试各种问?&lt;/p&gt;
+
+&lt;p&gt;我也挺奇怪的.
+昨天干活儿,说给InnoDB的字段加个全文索引,同事也突然提说InnoDB不能用全文索引吧? 我说刚刚才加的怎么就不行了? 同事也一脸奇怪去网上搜搜,发现官方文档确实提到可以用. 然后就愉快的用了.&lt;/p&gt;
+
+&lt;p&gt;今早上突然又想到这事儿,然后好好搜了一下.发现问题原来出现在这里:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html&#34;&gt;MySql官网文档原文&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;人家原文是这样写的:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;MySQL has support for full-text indexing and searching:
+
+A full-text index in MySQL is an index of type FULLTEXT.
+
+Full-text indexes can be used only with MyISAM tables. (In MySQL 5.6 and up, they can also be used with InnoDB tables.) Full-text indexes can be created only for CHAR, VARCHAR, or TEXT columns.
+
+A FULLTEXT index definition can be given in the CREATE TABLE statement when a table is created, or added later using ALTER TABLE or CREATE INDEX.
+
+For large data sets, it is much faster to load your data into a table that has no FULLTEXT index and then create the index after that, than to load data into a table that has an existing FULLTEXT index.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Mysql5.5这个版本,只有MyISAM引擎支持全文索引,但是到了5.6之后的版本,InnoDB也一样支持了. 恩,支持了啊!&lt;/p&gt;
+
+&lt;p&gt;好了,这里呼吁下,大家及时更新对事物的认知,还有. 别老拿很多年前的面试题及答案来问人了哈.  搜索别用百度,用Google吧~
+这个就是今天的感慨了&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>很久没写什么了</title>
@@ -303,35 +346,6 @@
 &lt;p&gt;男女交往的时候也可以看到这个规律,开始男生向女生示好这是态度交流,聊天的时候活跃下气氛这是情绪交流,最后找机会谈谈人生就是想法交流. 而那种被发 [好人卡] 的男生就是不懂情绪和想法交流,一直卡在态度交流的层面上没法深入进去. 例如卡在态度或情绪层面,时间久了就会搞砸事情了. 但是这个过程也应当是递进的关系,不要突然跳过其中的过程,否则人家当你神经病.&lt;/p&gt;
 
 &lt;p&gt;别把社交这事儿看得太严重,只要掌握了前面的三层方式,同时交流积极主动,至少在同性间交流肯定是没问题的了. 至于异性,如果你真有障碍,那么还是等同性之间熟练了再进一步练习吧! 其实也不难,但是要循序渐进.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>什么样的公司,是靠谱的公司</title>
-      <link>http://wizarot.me/post/2016-05-07/</link>
-      <pubDate>Sat, 07 May 2016 10:28:27 +0800</pubDate>
-      
-      <guid>http://wizarot.me/post/2016-05-07/</guid>
-      <description>&lt;p&gt;资深IT人曹政,在36Kr平台写了平台给我们分析了什么公司更靠谱.&lt;/p&gt;
-
-&lt;p&gt;什么是所谓的狼性? 总结下来就是老板的责任要员工扛,风险要员工来担,别管老板多过分方向多不靠谱,员工都要想办法让公司盈利. 这个算过分的要求么? 回报给到位就不算过分.&lt;/p&gt;
-
-&lt;p&gt;很多公司都动不动叫我们要推行狼性文化,这样的公司到底考不考谱呢?
-总结来说,如果老板叫你要狼性,那么他一定要有人性.任何不谈回报,只谈狼性的公司你都要小心了.&lt;/p&gt;
-
-&lt;p&gt;那么什么样的回报更实惠? 加工资还是给期权?
-实际上,靠着期权发财的员工,除非少数眼光独到的以外,其它都是靠运气.
-具体怎么鉴定公司福利是否靠谱呢?&lt;/p&gt;
-
-&lt;p&gt;1.如果企业处在草创期,公司规模和财务状况不好,那么你拿期权忍受低薪可以理解.但是公司已经规模化盈利了,却依然保持低薪不给你分红权益那么显然就有问题.&lt;/p&gt;
-
-&lt;p&gt;2.如果公司给一线干活的人不合理的股权比例,那么就要小心点.好的创业团队一定给后来的人才和员工流出一定的股权比例.&lt;/p&gt;
-
-&lt;p&gt;3.如果公司经常变更注册,或注册实体太多,就要注意公司是不是借着变更在股权上动手脚.当然可能是给员工增配,也肯能是给大股东,要具体分析.&lt;/p&gt;
-
-&lt;p&gt;4.公司的配股数和期权数不重要,折算比例才重要.很多人拿到几万几十万配股,结果大股东拿着几十亿股,按比例算下来根本没多少钱.&lt;/p&gt;
-
-&lt;p&gt;身为一个有理性思维的程序员,先不要被老板忽悠,要根据这些标准衡量下,是否值得你用狼性为他们拼命.&lt;/p&gt;
 </description>
     </item>
     
