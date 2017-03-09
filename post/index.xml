@@ -7,8 +7,59 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 08 Mar 2017 10:58:31 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Mar 2017 10:14:24 +0800</lastBuildDate>
     <atom:link href="http://wizarot.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>我的街机模拟器制作笔记-潘多拉盒子4</title>
+      <link>http://wizarot.me/post/2017-03-09/</link>
+      <pubDate>Thu, 09 Mar 2017 10:14:24 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/2017-03-09/</guid>
+      <description>
+
+&lt;p&gt;最近突然对过去的经典游戏泛起了怀旧的情怀,所以突然想玩一下.
+在网上看到别人家的作品,所以我也来试试:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://wizarot.me/img/2017-03-09/1.png&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;查找了一些资料和别人的教程,打算先使用现成的摇杆+月光宝盒这个方案,自己改造.&lt;/p&gt;
+
+&lt;h3 id=&#34;展示下第一阶段的作品&#34;&gt;展示下第一阶段的作品:&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://wizarot.me/img/2017-03-09/2.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/3.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/4.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/5.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/6.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/7.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/8.png&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;激动的安装好,然后靠无限投币打穿了几个以前从来没穿的游戏! 满满的全是成就感啊!合金弹头什么的最带感了,可以忘了拍照纪念.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://wizarot.me/img/2017-03-09/10.png&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;第二阶段&#34;&gt;第二阶段:&lt;/h3&gt;
+
+&lt;p&gt;因为盒子顶上还要放一个专门摇杆实在难看,所以换个思路,下面盒子刚好可以安装摇杆和按钮.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://wizarot.me/img/2017-03-09/9.png&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;动手拆机接线,简单的很啊!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://wizarot.me/img/2017-03-09/11.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/12.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/13.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/14.png&#34; width=&#34;400&#34;&gt;
+&lt;img src=&#34;http://wizarot.me/img/2017-03-09/15.png&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;盒子上面钻眼开洞,可能需要找珠海本地的  五金加工厂 来搞定? 或许吧.CNC加工?各种找,终于在被黑了100元的情况下用车床给开的洞. 买了摇杆和按钮,恩,感觉按钮手感没茶轴好.. 以后有机会自己改改!&lt;/p&gt;
+
+&lt;p&gt;最终完成图:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://wizarot.me/img/2017-03-09/16.png&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</title>
@@ -311,41 +362,6 @@ For large data sets, it is much faster to load your data into a table that has n
 &lt;p&gt;4.千万不要塑造虚假的完美形象. 没人是完美的,你自己也是,一旦未来虚假形象被拆穿那就不好收场,而且,人际交往中,也没人真的喜欢完美的人. 你什么样子,女生几句话大概就知道了. 有点小缺陷也很可爱的.&lt;/p&gt;
 
 &lt;p&gt;ps.好好去试试吧! 这点东西并不能真正给你很大提升,仅仅是个指引. 自己实践下才更重要.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>不擅长说话的人如何扩大社交圈</title>
-      <link>http://wizarot.me/post/2016-05-08/</link>
-      <pubDate>Sun, 08 May 2016 09:36:29 +0800</pubDate>
-      
-      <guid>http://wizarot.me/post/2016-05-08/</guid>
-      <description>
-
-&lt;p&gt;我们经常会遇到社交场合,例如参加PHP大会?等各种技术会议之类的,但是即使你鼓起勇气和其他人认识了,加了微信或递了名片,但这样做并没有扩大你的社交圈.这些没有后续交流和互动的都是无效社交,那么,怎么才能获得有效的社交呢?&lt;/p&gt;
-
-&lt;p&gt;聊天,交流的第一步.可惜,对于比较内向的人尤其是那些内向的程序员来说,和陌生人说话真的是太难了.
-心理咨询师 阮琪,给我们介绍了一种称为 “行为聊天” 的方式,希望可以有效的帮助大家.&lt;/p&gt;
-
-&lt;p&gt;行为聊天,就是用开放式的方法和别人聊天. 我们平常不擅长沟通的人,喜欢用 [评价式] 的方式同别人说话. 例如,上来就说,你很漂亮,你的什么什么很好,你的技术很厉害,你的演讲很出色等等&amp;hellip; 这个呢,说的也许是事实,但这么说让人不好接话. 那么,开放式沟通应该怎么说呢? 例如,可以说,你的演讲我听了很有收获,准备回去再项目里试一试之类的. 这时候,你们就可以接着聊你喜欢的技术话题了,想怎么 聊就怎么聊.&lt;/p&gt;
-
-&lt;h3 id=&#34;行为聊天的要点就是-你要告诉对方-他说的话对你的行为有什么影响-这样就可以创造出话题-使你们之间有联系&#34;&gt;行为聊天的要点就是,你要告诉对方,他说的话对你的行为有什么影响. 这样就可以创造出话题,使你们之间有联系.&lt;/h3&gt;
-
-&lt;p&gt;如果有人问了你些有点尴尬的问题,那么同样也可以用行为聊天来化解. 例如有人说你的演讲很厉害什么的来搭讪你的时候,你可以这样回答: 那么你打算怎么使用这些技术呢? 无论对方回答是否会使用你的技术,你都可以顺势分析下这些东西的好坏之类. 这样呢,你和陌生人就可以在 +事实层面+ 进行互动.&lt;/p&gt;
-
-&lt;p&gt;如果你还有兴趣继续接触,并且已经加了微信,那么久可以进行下一步了. 你要在一周内和对方进行微信私聊,或者评论下朋友圈,一来二去大家熟悉了,就可以约出来喝茶吃饭什么的.
-有一个社交分层理论,将人际交流分为三层: 态度,情绪,想法. 你和对方进行不同层级的交流,就代表你们的关系进入什么阶段了.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;态度,是你想要表现给对方的状态.
-情绪,是你当下的真实状态.  
-想法,是你的认知和行为.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;比方说,你刚失恋心情不好,但之前已经答应朋友参加个饭局.到了桌上,你要表现的很开心,这就是态度. 但实际上你心情肯定不好,这就是你的真实情绪. 接着大家喝了几杯,聊得很开心,你就开始放松了,吧自己的真实情绪表现出来,和大脚聊工作,生活,感情把自己失恋的事儿说了,还讲自己怎么打算的. 然后大家给你出主意. 这样就进入了想法层面的交流.&lt;/p&gt;
-
-&lt;p&gt;男女交往的时候也可以看到这个规律,开始男生向女生示好这是态度交流,聊天的时候活跃下气氛这是情绪交流,最后找机会谈谈人生就是想法交流. 而那种被发 [好人卡] 的男生就是不懂情绪和想法交流,一直卡在态度交流的层面上没法深入进去. 例如卡在态度或情绪层面,时间久了就会搞砸事情了. 但是这个过程也应当是递进的关系,不要突然跳过其中的过程,否则人家当你神经病.&lt;/p&gt;
-
-&lt;p&gt;别把社交这事儿看得太严重,只要掌握了前面的三层方式,同时交流积极主动,至少在同性间交流肯定是没问题的了. 至于异性,如果你真有障碍,那么还是等同性之间熟练了再进一步练习吧! 其实也不难,但是要循序渐进.&lt;/p&gt;
 </description>
     </item>
     

@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MyISAM和InnoDB的区别">
+  <meta name="description" content="手工作业">
   <meta name="generator" content="Hugo 0.16" />
 
-  <title>以后别跟我说什么只有MyISAM引擎才能用全文索引啊! &middot; Wizarot Site 记录点平时写的东西</title>
+  <title>我的街机模拟器制作笔记-潘多拉盒子4 &middot; Wizarot Site 记录点平时写的东西</title>
 
   
   
@@ -175,8 +175,8 @@
 
 
 <div class="header">
-  <h1>以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</h1>
-  <h2>MyISAM和InnoDB的区别</h2>
+  <h1>我的街机模拟器制作笔记-潘多拉盒子4</h1>
+  <h2>手工作业</h2>
 </div>
 <div class="content">
 
@@ -184,7 +184,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>08 Mar 2017, 10:58</time>
+    <time>09 Mar 2017, 10:14</time>
   </div>
 
   
@@ -203,38 +203,46 @@
 
   
 
-<h2 id="以后别跟我说什么只有myisam引擎才能用全文索引啊">以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</h2>
+<p>最近突然对过去的经典游戏泛起了怀旧的情怀,所以突然想玩一下.
+在网上看到别人家的作品,所以我也来试试:</p>
 
-<p>总有人在问MyISAM和InnoDB的区别时,提出只有MyISAM引擎才能使用全文索引 (Full-text Index)</p>
+<p><img src="http://wizarot.me/img/2017-03-09/1.png" width="400"></p>
 
-<p>老实说,我经常在自己机器的MySql中InnoDB的表上面给text加全文索引来的.而且之前我google时候,真的也在mysql官方文档里看到过InnoDB使用全文索引的介绍.
-说实话,有一次我刚用完全文索引,就在被人面试的时候问过类似问题.哎,当时面试那位一脸鄙视的样子深深伤害啊! 好长时间一直都没忘记.
-话说,InnoDB真的可以用全文索引,为啥中国程序员圈子里就把这个只有MyISAM引擎才能用全文索引当做铁律还一直各种面试各种问?</p>
+<p>查找了一些资料和别人的教程,打算先使用现成的摇杆+月光宝盒这个方案,自己改造.</p>
 
-<p>我也挺奇怪的.
-昨天干活儿,说给InnoDB的字段加个全文索引,同事也突然提说InnoDB不能用全文索引吧? 我说刚刚才加的怎么就不行了? 同事也一脸奇怪去网上搜搜,发现官方文档确实提到可以用. 然后就愉快的用了.</p>
+<h3 id="展示下第一阶段的作品">展示下第一阶段的作品:</h3>
 
-<p>今早上突然又想到这事儿,然后好好搜了一下.发现问题原来出现在这里:</p>
+<p><img src="http://wizarot.me/img/2017-03-09/2.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/3.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/4.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/5.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/6.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/7.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/8.png" width="400"></p>
 
-<p><a href="https://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html">MySql官网文档原文</a></p>
+<p>激动的安装好,然后靠无限投币打穿了几个以前从来没穿的游戏! 满满的全是成就感啊!合金弹头什么的最带感了,可以忘了拍照纪念.</p>
 
-<p>人家原文是这样写的:</p>
+<p><img src="http://wizarot.me/img/2017-03-09/10.png" width="400"></p>
 
-<pre><code>MySQL has support for full-text indexing and searching:
+<h3 id="第二阶段">第二阶段:</h3>
 
-A full-text index in MySQL is an index of type FULLTEXT.
+<p>因为盒子顶上还要放一个专门摇杆实在难看,所以换个思路,下面盒子刚好可以安装摇杆和按钮.</p>
 
-Full-text indexes can be used only with MyISAM tables. (In MySQL 5.6 and up, they can also be used with InnoDB tables.) Full-text indexes can be created only for CHAR, VARCHAR, or TEXT columns.
+<p><img src="http://wizarot.me/img/2017-03-09/9.png" width="400"></p>
 
-A FULLTEXT index definition can be given in the CREATE TABLE statement when a table is created, or added later using ALTER TABLE or CREATE INDEX.
+<p>动手拆机接线,简单的很啊!</p>
 
-For large data sets, it is much faster to load your data into a table that has no FULLTEXT index and then create the index after that, than to load data into a table that has an existing FULLTEXT index.
-</code></pre>
+<p><img src="http://wizarot.me/img/2017-03-09/11.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/12.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/13.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/14.png" width="400">
+<img src="http://wizarot.me/img/2017-03-09/15.png" width="400"></p>
 
-<p>Mysql5.5这个版本,只有MyISAM引擎支持全文索引,但是到了5.6之后的版本,InnoDB也一样支持了. 恩,支持了啊!</p>
+<p>盒子上面钻眼开洞,可能需要找珠海本地的  五金加工厂 来搞定? 或许吧.CNC加工?各种找,终于在被黑了100元的情况下用车床给开的洞. 买了摇杆和按钮,恩,感觉按钮手感没茶轴好.. 以后有机会自己改改!</p>
 
-<p>好了,这里呼吁下,大家及时更新对事物的认知,还有. 别老拿很多年前的面试题及答案来问人了哈.  搜索别用百度,用Google吧~
-这个就是今天的感慨了&hellip;</p>
+<p>最终完成图:</p>
+
+<p><img src="http://wizarot.me/img/2017-03-09/16.png" width="400"></p>
 
 
   
@@ -242,15 +250,11 @@ For large data sets, it is much faster to load your data into a table that has n
   <div class="pure-u-1 pure-u-md-1-2">
     
     <nav class="prev">
-      <a href="http://wizarot.me/post/2017-03-07/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>很久没写什么了</a>
+      <a href="http://wizarot.me/post/2017-03-08/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</a>
     </nav>
     
   </div>
   <div class="pure-u-1 pure-u-md-1-2">
-    
-    <nav class="next">
-      <a href="http://wizarot.me/post/2017-03-09/">我的街机模拟器制作笔记-潘多拉盒子4<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
-    </nav>
     
   </div>
 </div>
