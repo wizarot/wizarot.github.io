@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://wizarot.me/</loc>
-    <lastmod>2017-03-09T10:14:24+08:00</lastmod>
+    <loc>http://wizarot.me/post/2018-03-22/</loc>
+    <lastmod>2018-03-22T11:31:25+08:00</lastmod>
   </url>
   
   <url>
@@ -329,6 +330,34 @@
   <url>
     <loc>http://wizarot.me/about/</loc>
     <lastmod>2016-03-11T10:52:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wizarot.me/post/</loc>
+    <lastmod>2018-03-22T11:31:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wizarot.me/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wizarot.me/topics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wizarot.me/</loc>
+    <lastmod>2018-03-22T11:31:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wizarot.me/topics/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2016-03-11T11:51:21+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
