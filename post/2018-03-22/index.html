@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ssh key生成, nginx php 安装和配置">
-  <meta name="generator" content="Hugo 0.37.1" />
+  <meta name="generator" content="Hugo 0.38.2" />
 
   <title>公司新同事的MAC安装配置指南 &middot; Wizarot Site 记录点平时写的东西</title>
 
@@ -296,11 +296,10 @@
 <h2 id="php开发篇">PHP开发篇</h2>
 
 <ul>
-<li>安装php :推荐安装两个PHP版本 5.6 ,7.0</li>
+<li>安装php :推荐安装两个PHP版本 5.6 ,7.0 (brew 升级了,因此之前方式有些问题)</li>
 </ul>
 
-<pre><code class="language-bash">&gt; brew tap homebrew/php
-&gt; brew install php56  # 安装php5.6
+<pre><code class="language-bash">&gt; brew install php@5.6  # 安装php5.6
 </code></pre>
 
 <ul>
@@ -308,20 +307,35 @@
 </ul>
 
 <pre><code class="language-bash">&gt; brew unlink php  # 不执行这个会报错
-&gt; brew install php70 # 安装php7.0版本
-&gt; brew install php70-redis # 之后可能会发现php缺少一些模块,可以类似这样安装对应模块.如php70-intl,php70-opcache....
+&gt; brew install php@70 # 安装php7.0版本
 </code></pre>
+
+<ul>
+<li>php redis等扩展可能无法直接安装,解决办法:</li>
+</ul>
+
+<p>我们使用第三方的brew库:</p>
+
+<pre><code class="language-bash">&gt; brew tap kyslik/homebrew-php
+</code></pre>
+
+<p>然后后面就可以正常安装对应的php扩展了.如不哦不行,那么建议考虑用源码安装吧!也是可以的.</p>
 
 <ul>
 <li>安装php版本管理工具php-version</li>
 </ul>
 
-<pre><code class="language-bash">&gt; brew install php-version
+<p>项目github: <a href="https://github.com/wilmoore/php-version">https://github.com/wilmoore/php-version</a></p>
+
+<pre><code class="language-bash">&gt; brew install php-version (这个办法已弃用!)
+&gt; mkdir -p $HOME/local/php-version
+&gt; cd !$
+&gt; curl -# -L https://github.com/wilmoore/php-version/tarball/master | tar -xz --strip 1
 </code></pre>
 
 <p>装好之后,编辑 ~/.zshrc文件,增加下面这行.这样在每次启动一个shell就会加载php-version管理了.</p>
 
-<pre><code class="language-ini">source $(brew --prefix php-version)/php-version.sh &amp;&amp; php-version 7.0
+<pre><code class="language-ini">source $HOME/local/php-version/php-version.sh &amp;&amp; php-version 7.0
 </code></pre>
 
 <p>具体使用方法: <code>php-version</code> 查看当前安装php版本. <code>php-version 7.0</code> 切换到对应版本.</p>
