@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 22 Mar 2018 11:31:25 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 17:37:16 +0800</lastBuildDate>
     
 	<atom:link href="http://wizarot.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>参加 ARTS 计划日记 2019-04-03</title>
+      <link>http://wizarot.me/post/2019-04-03/</link>
+      <pubDate>Wed, 03 Apr 2019 17:37:16 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/2019-04-03/</guid>
+      <description>参加 ARTS 计划日记 A 部分: 今天完成 LeetCode 33题. (其实还应该有31题,然而,真的没看懂题目) 以下是我的解法(PHP版本) , 还有因为各人喜好问题,并没有用递归.
+function search($nums,$target) { // 还有一个直接foreach查找的,虽然时间复杂度是 O(n),但实际执行比这个快!!! // LogN的复杂度,需要用到判断条件有点复杂的折半查找 //每次折成两半之后,都会有一个是有序数组,另一个是无序的,那么有序的好判断,没有在有序数组中,就继续折半查找无序的部分 // 直接上4指针?还是递归? $low = 0; $heigh = count($nums)-1; while ($low &amp;lt;= $heigh) { // 情况1 if ($nums[$low]&amp;gt;$target &amp;amp;&amp;amp; $nums[$heigh] &amp;lt; $target) { // 不用继续找了,肯定没有.. return -1; } // 分两半 $mid = round(($heigh-$low)/2)+$low; echo &amp;quot;{$low}:{$mid}:{$heigh}\n&amp;quot;; // 看看运气,是否刚好找到了? if ($nums[$mid] == $target) { return $mid; } if ($nums[$low] == $target) { return $low; } if ($nums[$heigh] == $target) { return $heigh; } // 特殊的,判断到这里就要看看是否两个指针已经交汇了 if($low == $heigh || $mid == $low || $mid == $heigh){ return -1; } // 当然通常运气不好那么好直接找到,那么判断左右两边,哪边刚好是正常的数组 if($nums[$low] &amp;lt;= $nums[$mid] ){ // 左边是正常数组 // 看看目标是否在正常数组中 if($nums[$low]&amp;lt; $target &amp;amp;&amp;amp; $target &amp;lt; $nums[$mid]){ // 没的说,继续找的就是这个数组了.</description>
+    </item>
     
     <item>
       <title>公司新同事的MAC安装配置指南</title>
@@ -950,6 +960,15 @@ PS. 前几天一个家长群里又有关于中医好还是不好的讨论了. �
 抛开作者的例子不论,最近有些同学使用爬虫技术取得一些大网站的公开数据,进行简单统计的方式挺有启发的.很多时候,有意思的内容就包含在一些杂乱无章的公开信息里,需要有心人的发掘. 个人数据的发掘和记录,最重要的是有持续性和方便性.可以始终如一的记录并分析才有意义.量化自我实在也是一个有意思的玩法.
 文章中推荐这个东西 ，Daytum[10]是个现代化的工具。更轻量级的工具包括YAST和Slimtimer。如果你只想记录一下自己在计算机上都干了什么，RescueTime非常方便。类似的工具相当多，Sleep Time可以通过手机震动监督人的睡眠质量，mint.com 则能监督人的花钱习惯，等等。
 总之,这样做的最终目的不要忘记,使用这些方法,可以帮助人的评判性思维成长.</description>
+    </item>
+    
+    <item>
+      <title>height light test</title>
+      <link>http://wizarot.me/post/height-light-test/</link>
+      <pubDate>Thu, 24 Mar 2016 14:43:14 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/height-light-test/</guid>
+      <description>echo &#39;Hello world!&#39;;  {% block topbar %} &amp;lt;div class=&amp;quot;top-bar&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;col-sm-12 col-xs-12&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;lang&amp;quot;&amp;gt; {% block language_switcher %} {{ cms_language_render([&#39;zh&#39;,&#39;en&#39;], &#39;FrontendBundle::languages.html.twig&#39;) }} {% endblock %} &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;&amp;lt;!--/.container--&amp;gt; &amp;lt;/div&amp;gt;&amp;lt;!--/.top-bar--&amp;gt; {% endblock %}  &amp;quot;require&amp;quot;: { &amp;quot;php&amp;quot;: &amp;quot;&amp;gt;=5.6&amp;quot;, &amp;quot;symfony/symfony&amp;quot;: &amp;quot;2.8.*&amp;quot;, &amp;quot;doctrine/orm&amp;quot;: &amp;quot;^2.4.8&amp;quot;, &amp;quot;doctrine/doctrine-bundle&amp;quot;: &amp;quot;~1.4&amp;quot;, &amp;quot;symfony/swiftmailer-bundle&amp;quot;: &amp;quot;~2.3&amp;quot;, &amp;quot;symfony/monolog-bundle&amp;quot;: &amp;quot;~2.4&amp;quot;, &amp;quot;sensio/distribution-bundle&amp;quot;: &amp;quot;~5.0&amp;quot;, &amp;quot;sensio/framework-extra-bundle&amp;quot;: &amp;quot;^3.0.2&amp;quot;, &amp;quot;incenteev/composer-parameter-handler&amp;quot;: &amp;quot;~2.0&amp;quot;, &amp;quot;wiz/admintools-bundle&amp;quot;: &amp;quot;2.8.x-dev&amp;quot;, &amp;quot;wiz/cms-bundle&amp;quot;: &amp;quot;2.8.x-dev&amp;quot;, &amp;quot;wiz/queue-bundle&amp;quot;: &amp;quot;dev-master&amp;quot;, &amp;quot;wiz/qiniu-bundle&amp;quot;: &amp;quot;dev-master&amp;quot;, &amp;quot;wiz/wechat-bundle&amp;quot;: &amp;quot;2.8.x-dev&amp;quot;, &amp;quot;wiz/wechat-plugin-bundle&amp;quot;: &amp;quot;2.</description>
     </item>
     
     <item>

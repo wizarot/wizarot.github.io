@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://wizarot.me/post/2019-04-03/</loc>
+    <lastmod>2019-04-03T17:37:16+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wizarot.me/post/2018-03-22/</loc>
     <lastmod>2018-03-22T11:31:25+08:00</lastmod>
   </url>
@@ -323,6 +328,11 @@
   </url>
   
   <url>
+    <loc>http://wizarot.me/post/height-light-test/</loc>
+    <lastmod>2016-03-24T14:43:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wizarot.me/post/hello-world/</loc>
     <lastmod>2016-03-11T11:51:21+08:00</lastmod>
   </url>
@@ -333,8 +343,14 @@
   </url>
   
   <url>
+    <loc>http://wizarot.me/topics/a.r.t.s/</loc>
+    <lastmod>2019-04-03T17:37:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://wizarot.me/post/</loc>
-    <lastmod>2018-03-22T11:31:25+08:00</lastmod>
+    <lastmod>2019-04-03T17:37:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -345,12 +361,13 @@
   
   <url>
     <loc>http://wizarot.me/topics/</loc>
+    <lastmod>2019-04-03T17:37:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://wizarot.me/</loc>
-    <lastmod>2018-03-22T11:31:25+08:00</lastmod>
+    <lastmod>2019-04-03T17:37:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   

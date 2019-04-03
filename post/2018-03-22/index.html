@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ssh key生成, nginx php 安装和配置">
-  <meta name="generator" content="Hugo 0.38.2" />
+  <meta name="generator" content="Hugo 0.49.2" />
 
   <title>公司新同事的MAC安装配置指南 &middot; Wizarot Site 记录点平时写的东西</title>
 
@@ -380,13 +380,11 @@ apc.shm_size=256M
 <li>启动php-fpm服务:</li>
 </ul>
 
-<p><code>brew services start homebrew/php/php70</code></p>
+<pre><code class="language-brew">
+* 确保php-fpm服务随开机启动:
 
-<ul>
-<li>确保php-fpm服务随开机启动:</li>
-</ul>
-
-<pre><code class="language-bash">&gt; mkdir -p ~/Library/LaunchAgents
+```bash
+&gt; mkdir -p ~/Library/LaunchAgents
 &gt; cp /usr/local/opt/php70/homebrew.mxcl.php70.plist ~/Library/LaunchAgents/
 &gt; launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist
 </code></pre>
@@ -521,8 +519,14 @@ server {
   </div>
   <div class="pure-u-10-24">
     
+    <nav class="next">
+      <a href="http://wizarot.me/post/2019-04-03/">参加 ARTS 计划日记 2019-04-03</a>
+    </nav>
+    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://wizarot.me/post/2019-04-03/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
