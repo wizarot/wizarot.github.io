@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 03 Apr 2019 17:37:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 17:33:07 +0800</lastBuildDate>
     
 	<atom:link href="http://wizarot.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>参加 ARTS 计划日记 2019-04-04</title>
+      <link>http://wizarot.me/post/2019-04-04/</link>
+      <pubDate>Thu, 04 Apr 2019 17:33:07 +0800</pubDate>
+      
+      <guid>http://wizarot.me/post/2019-04-04/</guid>
+      <description>A LeetCode 34.&amp;lt;在排序数组中查找元素的第一个和最后一个位置&amp;gt; 还是不喜欢递归,我选择三指针解决问题:
+function searchRange($nums, $target) { // 没得说..要求logN的查找直接用折半查找 $l = 0; $max = count($nums)-1; $r = $max; while ($l &amp;lt;= $r) { // 先看中间指针,再分左右.比较麻烦的是刚好中间指针是值,那么就需要向左右一直找下去? $mid = floor(($r-$l)/2)+$l; // echo &amp;quot;{$l}:{$mid}:$r\n&amp;quot;; if($nums[$mid]&amp;gt;$target){ // 在左边 $r = $mid; }elseif ($nums[$mid]&amp;lt;$target) { // 在右边 $l = $mid+1; }else { // 刚好找到这种 // 两种方式,1.简单的直接向左右扩展直到完成. 2.递归继续折半查找(时间复杂度会更低一点,但代码复杂) $l = $mid; $r = $mid; // echo &amp;quot;{$l}:{$mid}:$r\n&amp;quot;; $flag = true; while ($flag) { // echo &amp;quot;{$l}:{$mid}:$r\n&amp;quot;; $flag = false; // 指针越界!</description>
+    </item>
     
     <item>
       <title>参加 ARTS 计划日记 2019-04-03</title>
