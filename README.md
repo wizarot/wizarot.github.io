@@ -3,5 +3,7 @@
 
 可以访问域名: 
 
-    -   [wizarot.me](http://wizarot.me)
-    -   [wizarot.github.io](https://wizarot.github.io)
+  
+   [wizarot.me](http://wizarot.me)
+   
+   [wizarot.github.io](https://wizarot.github.io)
