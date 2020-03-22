@@ -9,7 +9,11 @@
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Fri, 11 Mar 2016 11:51:21 +0800</lastBuildDate>
     
+<<<<<<< HEAD
 	<atom:link href="https://wizarot.me/topics/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+=======
+	<atom:link href="http://wizarot.me/topics/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     
     
     <item>
@@ -17,7 +21,11 @@
       <link>https://wizarot.me/post/hello-world/</link>
       <pubDate>Fri, 11 Mar 2016 11:51:21 +0800</pubDate>
       
+<<<<<<< HEAD
       <guid>https://wizarot.me/post/hello-world/</guid>
+=======
+      <guid>http://wizarot.me/post/hello-world/</guid>
+>>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
       <description>Hello world 再写一次,希望可以正常提交</description>
     </item>
     
