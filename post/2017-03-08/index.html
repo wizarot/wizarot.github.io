@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MyISAM和InnoDB的区别">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  <title>以后别跟我说什么只有MyISAM引擎才能用全文索引啊! &middot; Wizarot Site 记录点平时写的东西</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西" href="https://wizarot.meindex.xml" />
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://wizarot.meimg/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://wizarot.me/">Blackburn</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://wizarot.meindex.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://weibo.com/wizarot" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/wizarot" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div class="pure-g">
+  <div class="small-print pure-u-1 pure-u-md-1-1">
+    <small>&copy; 2020. All rights reserved.</small>
+  </div>
+  <div class="small-print pure-u-1 pure-u-md-1-1">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</h1>
+  <h2>MyISAM和InnoDB的区别</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>08 Mar 2017, 10:58</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  
+
+<h2 id="以后别跟我说什么只有myisam引擎才能用全文索引啊">以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</h2>
+
+<p>总有人在问MyISAM和InnoDB的区别时,提出只有MyISAM引擎才能使用全文索引 (Full-text Index)</p>
+
+<p>老实说,我经常在自己机器的MySql中InnoDB的表上面给text加全文索引来的.而且之前我google时候,真的也在mysql官方文档里看到过InnoDB使用全文索引的介绍.
+说实话,有一次我刚用完全文索引,就在被人面试的时候问过类似问题.哎,当时面试那位一脸鄙视的样子深深伤害啊! 好长时间一直都没忘记.
+话说,InnoDB真的可以用全文索引,为啥中国程序员圈子里就把这个只有MyISAM引擎才能用全文索引当做铁律还一直各种面试各种问?</p>
+
+<p>我也挺奇怪的.
+昨天干活儿,说给InnoDB的字段加个全文索引,同事也突然提说InnoDB不能用全文索引吧? 我说刚刚才加的怎么就不行了? 同事也一脸奇怪去网上搜搜,发现官方文档确实提到可以用. 然后就愉快的用了.</p>
+
+<p>今早上突然又想到这事儿,然后好好搜了一下.发现问题原来出现在这里:</p>
+
+<p><a href="https://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html">MySql官网文档原文</a></p>
+
+<p>人家原文是这样写的:</p>
+
+<pre><code>MySQL has support for full-text indexing and searching:
+
+A full-text index in MySQL is an index of type FULLTEXT.
+
+Full-text indexes can be used only with MyISAM tables. (In MySQL 5.6 and up, they can also be used with InnoDB tables.) Full-text indexes can be created only for CHAR, VARCHAR, or TEXT columns.
+
+A FULLTEXT index definition can be given in the CREATE TABLE statement when a table is created, or added later using ALTER TABLE or CREATE INDEX.
+
+For large data sets, it is much faster to load your data into a table that has no FULLTEXT index and then create the index after that, than to load data into a table that has an existing FULLTEXT index.
+</code></pre>
+
+<p>Mysql5.5这个版本,只有MyISAM引擎支持全文索引,但是到了5.6之后的版本,InnoDB也一样支持了. 恩,支持了啊!</p>
+
+<p>好了,这里呼吁下,大家及时更新对事物的认知,还有. 别老拿很多年前的面试题及答案来问人了哈.  搜索别用百度,用Google吧~
+这个就是今天的感慨了&hellip;</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1 pure-u-md-1-2">
+    
+    <nav class="prev">
+      <a href="https://wizarot.me/post/2017-03-07/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>很久没写什么了</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1 pure-u-md-1-2">
+    
+    <nav class="next">
+      <a href="https://wizarot.me/post/2017-03-09/">我的街机模拟器制作笔记-潘多拉盒子4<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
+    </nav>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'wizarot';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://wizarot.mejs/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74990530-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

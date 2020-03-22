@@ -2,26 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>随笔 on Wizarot Site 记录点平时写的东西</title>
-    <link>http://wizarot.me/topics/%E9%9A%8F%E7%AC%94/</link>
+    <link>https://wizarot.me/topics/%E9%9A%8F%E7%AC%94/</link>
     <description>Recent content in 随笔 on Wizarot Site 记录点平时写的东西</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Fri, 11 Mar 2016 11:51:21 +0800</lastBuildDate>
-    <atom:link href="http://wizarot.me/topics/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://wizarot.me/topics/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>hello world</title>
-      <link>http://wizarot.me/post/hello-world/</link>
+      <link>https://wizarot.me/post/hello-world/</link>
       <pubDate>Fri, 11 Mar 2016 11:51:21 +0800</pubDate>
       
-      <guid>http://wizarot.me/post/hello-world/</guid>
-      <description>
-
-&lt;h3 id=&#34;hello-world:aa77bbfd89a7b0ff10def205b9c08d51&#34;&gt;Hello world&lt;/h3&gt;
-
-&lt;p&gt;再写一次,希望可以正常提交&lt;/p&gt;
-</description>
+      <guid>https://wizarot.me/post/hello-world/</guid>
+      <description>Hello world 再写一次,希望可以正常提交</description>
     </item>
     
   </channel>
