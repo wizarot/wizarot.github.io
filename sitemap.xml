@@ -1,52 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/post/2019-04-04/</loc>
-=======
-    <loc>http://wizarot.me/post/2019-04-04/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2019-04-04T17:33:07+08:00</lastmod>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/post/2019-04-03/</loc>
-=======
-    <loc>http://wizarot.me/post/2019-04-03/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2019-04-03T17:37:16+08:00</lastmod>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/post/2018-03-22/</loc>
-=======
-    <loc>http://wizarot.me/post/2018-03-22/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2018-03-22T11:31:25+08:00</lastmod>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/post/2017-03-09/</loc>
     <lastmod>2017-03-09T10:14:24+08:00</lastmod>
-=======
-    <loc>http://wizarot.me/post/2017-03-09/</loc>
-    <lastmod>2017-03-09T10:14:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wizarot.me/post/2017-03-08/</loc>
-    <lastmod>2017-03-08T10:58:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wizarot.me/post/2017-03-07/</loc>
-    <lastmod>2017-03-07T19:08:35+08:00</lastmod>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
   </url>
   
   <url>
@@ -360,16 +332,7 @@
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/post/hello-world/</loc>
-=======
-    <loc>http://wizarot.me/post/height-light-test/</loc>
-    <lastmod>2016-03-24T14:43:14+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://wizarot.me/post/hello-world/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2016-03-11T11:51:21+08:00</lastmod>
   </url>
   
@@ -379,60 +342,36 @@
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/topics/a.r.t.s/</loc>
-=======
-    <loc>http://wizarot.me/topics/a.r.t.s/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2019-04-03T17:37:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/post/</loc>
-=======
-    <loc>http://wizarot.me/post/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2019-04-04T17:33:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/tags/</loc>
-=======
-    <loc>http://wizarot.me/tags/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/topics/</loc>
-=======
-    <loc>http://wizarot.me/topics/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2019-04-03T17:37:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/</loc>
-=======
-    <loc>http://wizarot.me/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2019-04-04T17:33:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://wizarot.me/topics/%E9%9A%8F%E7%AC%94/</loc>
-=======
-    <loc>http://wizarot.me/topics/%E9%9A%8F%E7%AC%94/</loc>
->>>>>>> 46b8eadd15d41fac32505372346e86c85efdd75b
     <lastmod>2016-03-11T11:51:21+08:00</lastmod>
     <priority>0</priority>
   </url>
