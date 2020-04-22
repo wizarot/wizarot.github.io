@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MyISAM和InnoDB的区别">
-  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>以后别跟我说什么只有MyISAM引擎才能用全文索引啊! &middot; Wizarot Site 记录点平时写的东西</title>
 
@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://wizarot.me/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://wizarot.me/css/side-menu.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="http://wizarot.me/css/blackburn.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,7 +48,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="http://wizarot.me/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -67,7 +67,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="http://wizarot.me/">Blackburn</a>
+  <a class="pure-menu-heading brand" href="https://wizarot.me/">Blackburn</a>
 
 
   <div class="pure-menu">
@@ -75,25 +75,25 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/about/"><i class='fa fa-user fa-fw'></i>About</a>
+          <a class="pure-menu-link" href="https://wizarot.me/about/"><i class='fa fa-user fa-fw'></i>About</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -191,7 +191,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2016. All rights reserved.</small>
+    <small>&copy; 2020. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -232,25 +232,16 @@
 
 </div>
 
-  
-
-<h2 id="以后别跟我说什么只有myisam引擎才能用全文索引啊">以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</h2>
-
+  <h2 id="以后别跟我说什么只有myisam引擎才能用全文索引啊">以后别跟我说什么只有MyISAM引擎才能用全文索引啊!</h2>
 <p>总有人在问MyISAM和InnoDB的区别时,提出只有MyISAM引擎才能使用全文索引 (Full-text Index)</p>
-
 <p>老实说,我经常在自己机器的MySql中InnoDB的表上面给text加全文索引来的.而且之前我google时候,真的也在mysql官方文档里看到过InnoDB使用全文索引的介绍.
 说实话,有一次我刚用完全文索引,就在被人面试的时候问过类似问题.哎,当时面试那位一脸鄙视的样子深深伤害啊! 好长时间一直都没忘记.
 话说,InnoDB真的可以用全文索引,为啥中国程序员圈子里就把这个只有MyISAM引擎才能用全文索引当做铁律还一直各种面试各种问?</p>
-
 <p>我也挺奇怪的.
 昨天干活儿,说给InnoDB的字段加个全文索引,同事也突然提说InnoDB不能用全文索引吧? 我说刚刚才加的怎么就不行了? 同事也一脸奇怪去网上搜搜,发现官方文档确实提到可以用. 然后就愉快的用了.</p>
-
 <p>今早上突然又想到这事儿,然后好好搜了一下.发现问题原来出现在这里:</p>
-
 <p><a href="https://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html">MySql官网文档原文</a></p>
-
 <p>人家原文是这样写的:</p>
-
 <pre><code>MySQL has support for full-text indexing and searching:
 
 A full-text index in MySQL is an index of type FULLTEXT.
@@ -261,9 +252,7 @@ A FULLTEXT index definition can be given in the CREATE TABLE statement when a ta
 
 For large data sets, it is much faster to load your data into a table that has no FULLTEXT index and then create the index after that, than to load data into a table that has an existing FULLTEXT index.
 </code></pre>
-
 <p>Mysql5.5这个版本,只有MyISAM引擎支持全文索引,但是到了5.6之后的版本,InnoDB也一样支持了. 恩,支持了啊!</p>
-
 <p>好了,这里呼吁下,大家及时更新对事物的认知,还有. 别老拿很多年前的面试题及答案来问人了哈.  搜索别用百度,用Google吧~
 这个就是今天的感慨了&hellip;</p>
 
@@ -272,13 +261,13 @@ For large data sets, it is much faster to load your data into a table that has n
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="http://wizarot.me/post/2017-03-07/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://wizarot.me/post/2017-03-07/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="http://wizarot.me/post/2017-03-07/">很久没写什么了</a>
+      <a href="https://wizarot.me/post/2017-03-07/">很久没写什么了</a>
     </nav>
     
   </div>
@@ -288,13 +277,13 @@ For large data sets, it is much faster to load your data into a table that has n
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="http://wizarot.me/post/2017-03-09/">我的街机模拟器制作笔记-潘多拉盒子4</a>
+      <a href="https://wizarot.me/post/2017-03-09/">我的街机模拟器制作笔记-潘多拉盒子4</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="http://wizarot.me/post/2017-03-09/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://wizarot.me/post/2017-03-09/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -325,7 +314,7 @@ For large data sets, it is much faster to load your data into a table that has n
 
 </div>
 </div>
-<script src="http://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
 
 
 <script>

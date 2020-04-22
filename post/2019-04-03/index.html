@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="leetCode 33">
-  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>参加 ARTS 计划日记 2019-04-03 &middot; Wizarot Site 记录点平时写的东西</title>
 
@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://wizarot.me/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://wizarot.me/css/side-menu.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="http://wizarot.me/css/blackburn.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,7 +48,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="http://wizarot.me/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -67,7 +67,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="http://wizarot.me/">Blackburn</a>
+  <a class="pure-menu-heading brand" href="https://wizarot.me/">Blackburn</a>
 
 
   <div class="pure-menu">
@@ -75,25 +75,25 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/about/"><i class='fa fa-user fa-fw'></i>About</a>
+          <a class="pure-menu-link" href="https://wizarot.me/about/"><i class='fa fa-user fa-fw'></i>About</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -191,7 +191,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2016. All rights reserved.</small>
+    <small>&copy; 2020. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -226,7 +226,7 @@
   <div>
     <i class="fa fa-folder fa-fw"></i>
     
-      <a class="post-taxonomy-topic" href="http://wizarot.me/topics/a.r.t.s">A.R.T.S</a>
+      <a class="post-taxonomy-topic" href="https://wizarot.me/topics/a.r.t.s">A.R.T.S</a>
     
   </div>
   
@@ -239,16 +239,11 @@
 
 </div>
 
-  
-
-<h1 id="参加-arts-计划日记">参加 ARTS 计划日记</h1>
-
+  <h1 id="参加-arts-计划日记">参加 ARTS 计划日记</h1>
 <h2 id="a-部分">A 部分:</h2>
-
 <p>今天完成 LeetCode 33题.  (其实还应该有31题,然而,真的没看懂题目)
 以下是我的解法(PHP版本) , 还有因为各人喜好问题,并没有用递归.</p>
-
-<pre><code class="language-PHP">function search($nums,$target)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PHP" data-lang="PHP">function search($nums,$target)
 {
     // 还有一个直接foreach查找的,虽然时间复杂度是 O(n),但实际执行比这个快!!! 
 
@@ -258,15 +253,15 @@
     // 直接上4指针?还是递归?
     $low = 0;
     $heigh = count($nums)-1;
-    while ($low &lt;= $heigh) {
+    while ($low <span style="color:#960050;background-color:#1e0010">&lt;</span>= $heigh) {
         // 情况1
-        if ($nums[$low]&gt;$target &amp;&amp; $nums[$heigh] &lt; $target) {
+        if ($nums[$low]&gt;$target <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> $nums[$heigh] <span style="color:#960050;background-color:#1e0010">&lt;</span> $target) {
             // 不用继续找了,肯定没有..
             return -1;
         }
         // 分两半 
         $mid = round(($heigh-$low)/2)+$low;
-        echo &quot;{$low}:{$mid}:{$heigh}\n&quot;;
+        echo &#34;{$low}:{$mid}:{$heigh}\n&#34;;
         // 看看运气,是否刚好找到了?
         if ($nums[$mid] == $target) {
             return $mid;
@@ -282,10 +277,10 @@
             return -1;
         }
         // 当然通常运气不好那么好直接找到,那么判断左右两边,哪边刚好是正常的数组
-        if($nums[$low] &lt;= $nums[$mid] ){
+        if($nums[$low] <span style="color:#960050;background-color:#1e0010">&lt;</span>= $nums[$mid] ){
             // 左边是正常数组
             // 看看目标是否在正常数组中
-            if($nums[$low]&lt; $target &amp;&amp; $target &lt; $nums[$mid]){
+            if($nums[$low]<span style="color:#960050;background-color:#1e0010">&lt;</span> $target <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> $target <span style="color:#960050;background-color:#1e0010">&lt;</span> $nums[$mid]){
                 // 没的说,继续找的就是这个数组了.
                 $heigh = $mid;// 高指针如果刚好等于中指针这种情况
             }else{
@@ -294,7 +289,7 @@
             }
         }else{
             // 右边是正常数组
-            if ($nums[$mid]&lt;$target &amp;&amp; $target &lt; $nums[$heigh]) {
+            if ($nums[$mid]<span style="color:#960050;background-color:#1e0010">&lt;</span>$target <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> $target <span style="color:#960050;background-color:#1e0010">&lt;</span> $nums[$heigh]) {
                 // 在正常数组中
                 $low = $mid;
             }else{
@@ -306,39 +301,35 @@
     return -1;
 }
 
-</code></pre>
-
-<h2 id="r-部分-学英语啊">R 部分, 学英语啊!</h2>
-
+</code></pre></div><h2 id="r-部分-学英语啊">R 部分, 学英语啊!</h2>
 <ul>
 <li>Look at our sweet angels, sound asleep! Don;t they just melt your heart? 看看咱们可爱的小天使,睡得多香啊!你不觉得心都被他们融化了吗?
-
 <ul>
 <li>sweet 惹人喜爱的,可爱的</li>
 <li>sweet angels 可爱的小天使</li>
 <li>My sister is a sweet young thing. 我妹妹是一个讨人喜欢的小家伙.</li>
 <li>thing (n.)人,家伙</li>
 <li>熟睡的,酣睡的:
-
 <ul>
 <li>sound asleep</li>
 <li>fast asleep</li>
 <li>sleeping deeply</li>
-</ul></li>
+</ul>
+</li>
 <li>I&rsquo;m surprised to see you awake. Two miinutes ago ,you were fast/sound asleep. 真奇怪你怎么醒了?两分钟前你还睡得很香呢.</li>
 <li>melt (v.) 使.软化</li>
 <li>sb&rsquo;s heart melt / melt sb&rsquo;s heart 使某人心软,态度软化,心被融化</li>
 <li>My heart just melted when I saw her crying.我看到她哭就变得心软了.</li>
-</ul></li>
+</ul>
+</li>
 <li>They are definitely a sight for sore eyes. 看看他们确实让我很开心.
-
 <ul>
 <li>sore 痛的,疼痛的</li>
 <li>a sight for sore eyes 乐于看到的人,及有吸引力的人</li>
 <li>You&rsquo;re a sight for sore eyes! 非常高兴见到你!</li>
-</ul></li>
+</ul>
+</li>
 <li>Ary you still singing the blues about bing a father of three? 你现在还不想当三个孩子的爸爸吗?
-
 <ul>
 <li>blues 布鲁斯音乐,蓝调音乐</li>
 <li>sing the blues 唱蓝调音乐,引申为: 抱怨,表达悲伤</li>
@@ -346,29 +337,29 @@
 <li>sing the blues about sth. 抱怨某事,对某事反感</li>
 <li>a father of three 三个孩子的爸爸</li>
 <li>a father of foru 四个孩子的爸爸..</li>
-</ul></li>
+</ul>
+</li>
 <li>You don&rsquo;t resent the rich, that&rsquo;s not your sensibility. 你并不仇富,仇富不是你的态度.
-
 <ul>
 <li>resent 愤恨,不满,憎恶</li>
 <li>sensibility (n.) 感情,敏感</li>
 <li>resent (doing) sth. 反感/憎恶 (做)某事</li>
 <li>He resents being treated like a child. 他讨厌被别人当孩子对待.</li>
-</ul></li>
+</ul>
+</li>
 <li>I&rsquo;m just kind of sick of moving 我只是有点讨厌搬家了
-
 <ul>
 <li>be sick of doing sth (对&hellip;)厌倦的,厌烦的</li>
 <li>I&rsquo;m sick of working for other people. 我讨厌给别人打工.</li>
-</ul></li>
+</ul>
+</li>
 <li>I&rsquo;m not disgusted with you. 我也没有厌烦你
-
 <ul>
 <li>disgusted (adj.) 反感的,厌恶的</li>
 <li>be disgusted with sb./sth. 厌烦某人/某事</li>
-</ul></li>
+</ul>
+</li>
 <li>No,I&rsquo;ve changed my tune.It was just a passing phase. 不,我已经改变想法了.那都是过去的事啦.
-
 <ul>
 <li>change sb&rsquo;s tune ~ sing a different tune 变卦,改变态度,改变调子</li>
 <li>You&rsquo;re changed your tune,haven&rsquo;t you? 你变卦了,是不是?</li>
@@ -378,9 +369,9 @@
 <li>a difficult phase 困难阶段,困难时期</li>
 <li>She&rsquo;s going through a difficult phase. 她整处于困难时期.</li>
 <li>go through 表示经历,度过</li>
-</ul></li>
+</ul>
+</li>
 <li>Great. So&hellip; Would now be a good time to talk about paying off the loan? 太好了. 那&hellip;是不是该谈谈还贷的事了?
-
 <ul>
 <li>Would now / this be a good time to do sth? 现在是做某事的好时机吗? 是时候做某事了吗?</li>
 <li>Would now be a good time to sign the paper? 是不是可以签合同了呢?</li>
@@ -388,27 +379,25 @@
 <li>pay off 付清,还清债务</li>
 <li>loan (n.) 债务,贷款</li>
 <li>I should be able to pay off the loan within two years. 我应该能在两年内还清贷款.</li>
-</ul></li>
+</ul>
+</li>
 <li>Oh, come on! You&rsquo;re got to be kidding me! 拜托! 你不是在逗我吧!
-
 <ul>
 <li>have got to = must 说话的人用来标识强调相信某事是真的.</li>
 <li>You have so much work. This has got to be a tough time for you . 你工作太多了.这对你来说一定是个困难的时期.</li>
-</ul></li>
 </ul>
-
-<hr />
-
+</li>
+</ul>
+<hr>
 <ul>
 <li>He&rsquo;s being really fussy. 他太难哄了.
-
 <ul>
 <li>fussy (adj.) 过分挑剔的,难以满足的</li>
 <li>be really fussy 太难满足了</li>
 <li>You&rsquo;re too fussy. 你太挑剔了</li>
-</ul></li>
+</ul>
+</li>
 <li>Are you laying down,Jack? 你躺下了吗,Jack?
-
 <ul>
 <li>lay down 休息而躺平,上床</li>
 <li>lie down 躺下</li>
@@ -416,23 +405,24 @@
 <li>I&rsquo;m so tired.I need to lie down. 我太累了,我的躺下了.</li>
 <li>lie-down (n.) 小憩,躺一会儿</li>
 <li>I usually have a bit of a lie-down after lunch. 午饭后我通常要休息一会儿.</li>
-</ul></li>
+</ul>
+</li>
 <li>Can you please check on Kevin? 你去看看 Kevin好吗?
-
 <ul>
 <li>check on sb 核实/检查某人是否一切正常</li>
 <li>She checked on her son several times during the night.她夜里起来看了她的儿子好几遍</li>
 <li>check on sth 检查/查看 某物是否安全/正确/状况良好</li>
 <li>My neighbor will come in once a week to check on things. 我的邻居一周会来看一次情况</li>
-</ul></li>
+</ul>
+</li>
 <li>Why, why won&rsquo;t he stop crying? 为什么,他为什么哭个不停?
-
 <ul>
 <li>sb will keep doing sth某人会一直做某事</li>
 <li>sb won&rsquo;t stop doing sth 某人不会停止做某事</li>
 <li>I won&rsquo;t stop trying until a satisfactory plan is made. 我会一直尝试,知道制定出一个满意的方案.</li>
 <li>satisfactory (adj.)令人满意的</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 
 
@@ -440,13 +430,13 @@
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="http://wizarot.me/post/2018-03-22/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://wizarot.me/post/2018-03-22/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="http://wizarot.me/post/2018-03-22/">公司新同事的MAC安装配置指南</a>
+      <a href="https://wizarot.me/post/2018-03-22/">公司新同事的MAC安装配置指南</a>
     </nav>
     
   </div>
@@ -456,13 +446,13 @@
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="http://wizarot.me/post/2019-04-04/">参加 ARTS 计划日记 2019-04-04</a>
+      <a href="https://wizarot.me/post/2019-04-04/">参加 ARTS 计划日记 2019-04-04</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="http://wizarot.me/post/2019-04-04/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://wizarot.me/post/2019-04-04/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -493,7 +483,7 @@
 
 </div>
 </div>
-<script src="http://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
 
 
 <script>

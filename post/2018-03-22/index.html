@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ssh key生成, nginx php 安装和配置">
-  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>公司新同事的MAC安装配置指南 &middot; Wizarot Site 记录点平时写的东西</title>
 
@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://wizarot.me/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://wizarot.me/css/side-menu.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="http://wizarot.me/css/blackburn.css">
+  <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,7 +48,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="http://wizarot.me/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -67,7 +67,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="http://wizarot.me/">Blackburn</a>
+  <a class="pure-menu-heading brand" href="https://wizarot.me/">Blackburn</a>
 
 
   <div class="pure-menu">
@@ -75,25 +75,25 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/about/"><i class='fa fa-user fa-fw'></i>About</a>
+          <a class="pure-menu-link" href="https://wizarot.me/about/"><i class='fa fa-user fa-fw'></i>About</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -191,7 +191,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2016. All rights reserved.</small>
+    <small>&copy; 2020. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -232,285 +232,201 @@
 
 </div>
 
-  
-
-<h2 id="基本配置篇">基本配置篇</h2>
-
+  <h2 id="基本配置篇">基本配置篇</h2>
 <ul>
 <li>MAC拿到手之后需要注册一个AppStore账号和Github.com账号.其余公司账号密码会专门分配,请参考使用.</li>
 <li>生成自己的ssh_key. 基本操作在Launchpad的其他&gt;终端 中进行命令行操作,请熟悉命令行操作,开发中会经常用到. 这里基本使用的命令是(命令行操作基础如果了解可以略过,不了解就稍微看一下或者问问同事):</li>
 </ul>
-
-<pre><code class="language-bash">&gt; ls  (显示当前目录内容)
-&gt; cd xxx  (进入某一个目录)
-</code></pre>
-
-<p>打开后会默认在当前用户的home目录.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; ls  <span style="color:#f92672">(</span>显示当前目录内容<span style="color:#f92672">)</span>
+&gt; cd xxx  <span style="color:#f92672">(</span>进入某一个目录<span style="color:#f92672">)</span>
+</code></pre></div><p>打开后会默认在当前用户的home目录.
 执行<code>ls ~/.ssh</code> 查看是否存在这个目录,正常新机器是不存在的,如果有请咨询同事.
 如果不存在,那么我们就新建一个,这将会生成.ssh目录和下面的文件.ssh目录是隐藏目录,新建之后用ls不能直接看到,这个很正常.
 执行命令: <code>ssh-keygen -t rsa -C &quot;youremail@example.com”</code> 里面的email用公司分配给你的即可.后面还有一些询问,都直接回车默认.</p>
-
 <ul>
 <li>安装xcode: 通过AppStore安装xcode.完成后,需要运行一次,同意里面的协议,然后关掉即可.在命令行工具,执行<code>xcode-select --install</code>完成安装xcode命令行工具.</li>
-<li>安装brew(OSX的软件包管理工具,之后的软件等安装,尽量使用brew来统一安装和管理,官网:<a href="http://brew.sh/index_zh-cn">http://brew.sh/index_zh-cn</a> ),命令行执行:</li>
+<li>安装brew(OSX的软件包管理工具,之后的软件等安装,尽量使用brew来统一安装和管理,官网:http://brew.sh/index_zh-cn ),命令行执行:</li>
 </ul>
-
-<pre><code class="language-bash">&gt; /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; /usr/bin/ruby -e <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span style="color:#66d9ef">)</span><span style="color:#e6db74">”
+</span></code></pre></div><ul>
 <li>安装iTerm2,更好的命令行终端软件: <code>brew install iterm2</code> 完成安装,如果在过程中发生错误同样google或找同事帮助.安装完成后,可以在Launchpad中找到,直接启动.并固定在Dock上面吧! 这是你的好朋友.</li>
 <li>zsh oh-my-zsh安装,配置.完成安装之后,重新打开一个iterm窗口,查看下效果.</li>
 </ul>
-
-<pre><code class="language-bash"> &gt; brew install zsh zsh-completions #安装zsh
- &gt; chsh -s $(which zsh) #切换zsh为默认shell
- &gt; sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew install zsh zsh-completions <span style="color:#75715e">#安装zsh</span>
+&gt; chsh -s <span style="color:#66d9ef">$(</span>which zsh<span style="color:#66d9ef">)</span> <span style="color:#75715e">#切换zsh为默认shell</span>
+&gt; sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><ul>
 <li>git工具:</li>
 </ul>
-
-<pre><code class="language-bash"> &gt; brew install git
-</code></pre>
-
-<hr />
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew install git
+</code></pre></div><hr>
 <h3 id="其他可选项目">其他可选项目</h3>
-
 <ul>
 <li>常用文本编辑器sublime3</li>
 </ul>
-
-<pre><code class="language-bash">&gt; brew tap caskroom/cask
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew tap caskroom/cask
 &gt; brew install brew-cask
 &gt; brew tap caskroom/versions
 &gt; brew cask install sublime-text
-</code></pre>
-
-<ul>
+</code></pre></div><ul>
 <li>TODO: 常用快捷键,有用的app推荐,iTerm主题和配置,MAC系统方便的配置等</li>
 </ul>
-
 <h2 id="php开发篇">PHP开发篇</h2>
-
 <ul>
 <li>安装php :推荐安装两个PHP版本 5.6 ,7.0 (brew 升级了,因此之前方式有些问题)</li>
 </ul>
-
-<pre><code class="language-bash">&gt; brew install php@5.6  # 安装php5.6
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew install php@5.6  <span style="color:#75715e"># 安装php5.6</span>
+</code></pre></div><ul>
 <li>安装php另一个版本</li>
 </ul>
-
-<pre><code class="language-bash">&gt; brew unlink php  # 不执行这个会报错
-&gt; brew install php@70 # 安装php7.0版本
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew unlink php  <span style="color:#75715e"># 不执行这个会报错</span>
+&gt; brew install php@70 <span style="color:#75715e"># 安装php7.0版本</span>
+</code></pre></div><ul>
 <li>php redis等扩展可能无法直接安装,解决办法:</li>
 </ul>
-
 <p>我们使用第三方的brew库:</p>
-
-<pre><code class="language-bash">&gt; brew tap kyslik/homebrew-php
-</code></pre>
-
-<p>然后后面就可以正常安装对应的php扩展了.如不哦不行,那么建议考虑用源码安装吧!也是可以的.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew tap kyslik/homebrew-php
+</code></pre></div><p>然后后面就可以正常安装对应的php扩展了.如不哦不行,那么建议考虑用源码安装吧!也是可以的.</p>
 <ul>
 <li>安装php版本管理工具php-version</li>
 </ul>
-
 <p>项目github: <a href="https://github.com/wilmoore/php-version">https://github.com/wilmoore/php-version</a></p>
-
-<pre><code class="language-bash">&gt; brew install php-version (这个办法已弃用!)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew install php-version <span style="color:#f92672">(</span>这个办法已弃用!<span style="color:#f92672">)</span>
 &gt; mkdir -p $HOME/local/php-version
 &gt; cd !$
-&gt; curl -# -L https://github.com/wilmoore/php-version/tarball/master | tar -xz --strip 1
-</code></pre>
-
-<p>装好之后,编辑 ~/.zshrc文件,增加下面这行.这样在每次启动一个shell就会加载php-version管理了.</p>
-
-<pre><code class="language-ini">source $HOME/local/php-version/php-version.sh &amp;&amp; php-version 7.0
-</code></pre>
-
-<p>具体使用方法: <code>php-version</code> 查看当前安装php版本. <code>php-version 7.0</code> 切换到对应版本.</p>
-
+&gt; curl -# -L https://github.com/wilmoore/php-version/tarball/master | tar -xz --strip <span style="color:#ae81ff">1</span>
+</code></pre></div><p>装好之后,编辑 ~/.zshrc文件,增加下面这行.这样在每次启动一个shell就会加载php-version管理了.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">source $HOME/local/php-version/php-version.sh &amp;&amp; php-version 7.0</span>
+</code></pre></div><p>具体使用方法: <code>php-version</code> 查看当前安装php版本. <code>php-version 7.0</code> 切换到对应版本.</p>
 <ul>
 <li>修改php配置,以php7.0为例: 执行命令<code>brew info php70</code> 可以看到关于php70的安装和使用信息.从里面找到php.ini文件路径: /usr/local/etc/php/7.0/php.ini  编辑php.ini文件配置</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; subl <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --prefix<span style="color:#66d9ef">)</span><span style="color:#e6db74">/etc/php/7.0/php.ini&#34;</span> <span style="color:#75715e"># 用之前安装的sublime编辑器编辑文件</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Date]</span>
+<span style="color:#75715e">; Defines the default timezone used by the date functions</span>
+<span style="color:#75715e">; http://php.net/date.timezone (设置时区)</span>
+<span style="color:#a6e22e">date.timezone</span> <span style="color:#f92672">=</span><span style="color:#e6db74">Asia/Macao</span>
 
-<pre><code class="language-bash">&gt; subl &quot;$(brew --prefix)/etc/php/7.0/php.ini&quot; # 用之前安装的sublime编辑器编辑文件
-</code></pre>
+<span style="color:#a6e22e">...</span>
 
-<pre><code class="language-ini">[Date]
-; Defines the default timezone used by the date functions
-; http://php.net/date.timezone (设置时区)
-date.timezone =Asia/Macao
+<span style="color:#75715e">; Maximum amount of memory a script may consume (128MB)</span>
+<span style="color:#75715e">; http://php.net/memory-limit (设置运行的内存限制)</span>
+<span style="color:#a6e22e">memory_limit</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">1024M</span>
 
-...
+<span style="color:#a6e22e">...</span>
+<span style="color:#75715e">; (设置post最大小)</span>
+<span style="color:#a6e22e">post_max_size</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">256M</span>
+<span style="color:#75715e">; (设置上传单个文件大小)</span>
+<span style="color:#a6e22e">upload_max_filesize</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">256M</span>
 
-; Maximum amount of memory a script may consume (128MB)
-; http://php.net/memory-limit (设置运行的内存限制)
-memory_limit = 1024M
-
-...
-; (设置post最大小)
-post_max_size = 256M
-; (设置上传单个文件大小)
-upload_max_filesize = 256M
-
-;if APC installed, update following in conf.d/ext-apc.ini(如果有,没有就算了)
-apc.shm_size=256M
-</code></pre>
-
-<p>设置php-fpm: <strong>为了方便好记设置 php7.0使用9070端口; php5.4用9054端口; php5.6用9056端口; php7.2 用9072端口</strong></p>
-
-<pre><code class="language-bash">&gt; subl &quot;$(brew --prefix)/etc/php/7.0/php-fpm.conf&quot; 
-</code></pre>
-
-<pre><code class="language-ini">listen = 127.0.0.1:9070  ;配置文件中分号是单行注释,设置为监听本机的9070端口是为了方便.
-</code></pre>
-
-<ul>
+<span style="color:#75715e">;if APC installed, update following in conf.d/ext-apc.ini(如果有,没有就算了)</span>
+<span style="color:#a6e22e">apc.shm_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">256M</span>
+</code></pre></div><p>设置php-fpm: <strong>为了方便好记设置 php7.0使用9070端口; php5.4用9054端口; php5.6用9056端口; php7.2 用9072端口</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; subl <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --prefix<span style="color:#66d9ef">)</span><span style="color:#e6db74">/etc/php/7.0/php-fpm.conf&#34;</span> 
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">listen</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">127.0.0.1:9070  ;配置文件中分号是单行注释,设置为监听本机的9070端口是为了方便.</span>
+</code></pre></div><ul>
 <li>启动php-fpm服务:</li>
 </ul>
-
-<pre><code class="language-brew">
-* 确保php-fpm服务随开机启动:
-
-```bash
-&gt; mkdir -p ~/Library/LaunchAgents
+<p><code>brew services start homebrew/php/php70</code></p>
+<ul>
+<li>确保php-fpm服务随开机启动:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; mkdir -p ~/Library/LaunchAgents
 &gt; cp /usr/local/opt/php70/homebrew.mxcl.php70.plist ~/Library/LaunchAgents/
 &gt; launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist
-</code></pre>
-
-<ul>
+</code></pre></div><ul>
 <li>安装Redis:</li>
 </ul>
-
-<pre><code class="language-bash">&gt; brew install redis    # 安装reids软件
-&gt; brew info redis    # 查看安装信息
-&gt; brew services start redis # 后台启动redis服务
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew install redis    <span style="color:#75715e"># 安装reids软件</span>
+&gt; brew info redis    <span style="color:#75715e"># 查看安装信息</span>
+&gt; brew services start redis <span style="color:#75715e"># 后台启动redis服务</span>
+</code></pre></div><ul>
 <li>安装Mysql:</li>
 </ul>
-
-<pre><code class="language-bash">&gt; brew install mysql # 安装mysql
-&gt; brew info mysql  # 查看安装信息(正常安装后也会直接显示一次)
-&gt; brew services start mysql # 启动mysql服务,默认用户root,密码为空
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew install mysql <span style="color:#75715e"># 安装mysql</span>
+&gt; brew info mysql  <span style="color:#75715e"># 查看安装信息(正常安装后也会直接显示一次)</span>
+&gt; brew services start mysql <span style="color:#75715e"># 启动mysql服务,默认用户root,密码为空</span>
+</code></pre></div><ul>
 <li>安装Nginx服务器:</li>
 </ul>
-
-<pre><code class="language-bash">&gt; brew install nginx # 直接安装nginx
-&gt; brew info nginx # 查看安装信息
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; brew install nginx <span style="color:#75715e"># 直接安装nginx</span>
+&gt; brew info nginx <span style="color:#75715e"># 查看安装信息</span>
+</code></pre></div><ul>
 <li>修改Nginx配置: <code>/usr/local/etc/nginx/nginx.conf</code></li>
 </ul>
-
-<pre><code class="language-bash">&gt; subl /usr/local/etc/nginx/nginx.conf  # 编辑修改配置文件
-</code></pre>
-
-<pre><code class="language-bash">worker_processes  4;  # nginx服务进程数量,本地开发4条进程就差不多了
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; subl /usr/local/etc/nginx/nginx.conf  <span style="color:#75715e"># 编辑修改配置文件</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">worker_processes  4;  <span style="color:#75715e"># nginx服务进程数量,本地开发4条进程就差不多了</span>
 ...
-</code></pre>
-
-<ul>
+</code></pre></div><ul>
 <li>增加开发虚拟站点: 新建文件放到目录 <code>/usr/local/etc/nginx/servers/</code> 下面</li>
 </ul>
-
-<pre><code class="language-bash">&gt; cd /usr/local/etc/nginx/servers/
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; cd /usr/local/etc/nginx/servers/
 &gt; subl test.conf
-</code></pre>
-
-<p>编辑文件 test.conf</p>
-
-<pre><code class="language-bash"># test;
-server {
-        listen       80; # 监听80端口,注意会造成直接启动服务失败,因为权限问题,这个下一节说明
+</code></pre></div><p>编辑文件 test.conf</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># test;</span>
+server <span style="color:#f92672">{</span>
+        listen       80; <span style="color:#75715e"># 监听80端口,注意会造成直接启动服务失败,因为权限问题,这个下一节说明</span>
         client_max_body_size 1024m;
-        server_name test.l.wizmacau.com; # 公司域名xxx.l.wizmacau.com会自动指向localhost,因此不需要改本机的hosts文件了.
-        access_log  /Users/user/logs/test.access.log; # 访问记录路径
-        error_log  /Users/user/logs/test.error.log; # 错误记录路径
+        server_name test.l.wizmacau.com; <span style="color:#75715e"># 公司域名xxx.l.wizmacau.com会自动指向localhost,因此不需要改本机的hosts文件了.</span>
+        access_log  /Users/user/logs/test.access.log; <span style="color:#75715e"># 访问记录路径</span>
+        error_log  /Users/user/logs/test.error.log; <span style="color:#75715e"># 错误记录路径</span>
 
-        root   /Users/user/php_productions/test/web; # 网站根目录,根据实际修改
+        root   /Users/user/php_productions/test/web; <span style="color:#75715e"># 网站根目录,根据实际修改</span>
 
-        # 如果URL中包含app.php，则转发为伪静态格式
-        rewrite ^/app_dev\.php/?(.*)$ /$1 permanent;
+        <span style="color:#75715e"># 如果URL中包含app.php，则转发为伪静态格式</span>
+        rewrite ^/app_dev<span style="color:#ae81ff">\.</span>php/?<span style="color:#f92672">(</span>.*<span style="color:#f92672">)</span>$ /$1 permanent;
 
-        location / {
-          index app_dev.php; # 默认解析本地开发模式 for symfony
+        location / <span style="color:#f92672">{</span>
+          index app_dev.php; <span style="color:#75715e"># 默认解析本地开发模式 for symfony</span>
           try_files $uri @rewriteapp;
-        }
-        location @rewriteapp {
-          rewrite ^(.*)$ /app_dev.php/$1 last;
-        }
+        <span style="color:#f92672">}</span>
+        location @rewriteapp <span style="color:#f92672">{</span>
+          rewrite ^<span style="color:#f92672">(</span>.*<span style="color:#f92672">)</span>$ /app_dev.php/$1 last;
+        <span style="color:#f92672">}</span>
 
-        location ~ ^/(index|app|app_dev|config)\.php(/|$) {
-            fastcgi_pass 127.0.0.1:9070; # php-fpm端口,使用7.0则改为9070端口
-            fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        location ~ ^/<span style="color:#f92672">(</span>index|app|app_dev|config<span style="color:#f92672">)</span><span style="color:#ae81ff">\.</span>php<span style="color:#f92672">(</span>/|$<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            fastcgi_pass 127.0.0.1:9070; <span style="color:#75715e"># php-fpm端口,使用7.0则改为9070端口</span>
+            fastcgi_split_path_info ^<span style="color:#f92672">(</span>.+<span style="color:#ae81ff">\.</span>php<span style="color:#f92672">)(</span>/.*<span style="color:#f92672">)</span>$;
             include fastcgi_params;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
             fastcgi_param HTTPS off;
             proxy_read_timeout 300;
             proxy_connect_timeout 300;
             proxy_redirect off;
-        }
+        <span style="color:#f92672">}</span>
 
-}
-</code></pre>
-
-<blockquote>
+<span style="color:#f92672">}</span>
+</code></pre></div><blockquote>
 <p>注意不要使用.dev做为本地开发域名,因为chrome浏览器新版本强制要求.dev的域名必须使用https.如果没在nginx配置443端口,那么会导致怎么都访问不到你的本地项目.</p>
 </blockquote>
-
 <ul>
 <li>启动nginx服务: 因为需要监听80端口,Mac普通用户权限启动不能监听1024以下端口,导致启动失败,需要给nginx提高到root权限</li>
 </ul>
-
 <pre><code>&gt; which nginx  # 查询当前nginx路径
 &gt; sudo chown root:wheel /usr/local/bin/nginx # 根据查询路径,给nginx修改所有者为root,注意会提示输入当前用户登录密码
 &gt; sudo chmod u+s /usr/local/bin/nginx
 &gt; sudo brew services start nginx  # 使用root用户启动nginx服务
 &gt; ps aux|grep nginx # 查看后台进程,如果有 nginx: worker process 那么说明nginx服务启动成功,如果失败请叫同事帮忙
-</code></pre>
-
-<h2 id="python开发篇-todo">Python开发篇(TODO)</h2>
-
+</code></pre><h2 id="python开发篇todo">Python开发篇(TODO)</h2>
 <ul>
 <li>安装python3</li>
 </ul>
-
 <pre><code>&gt; brew install python3 # 安装python3
-</code></pre>
-
-<h2 id="nodejs环境-todo">Nodejs环境(TODO)</h2>
-
-<h2 id="go语言开发环境-todo">GO语言开发环境(TODO)</h2>
+</code></pre><h2 id="nodejs环境todo">Nodejs环境(TODO)</h2>
+<h2 id="go语言开发环境todo">GO语言开发环境(TODO)</h2>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="http://wizarot.me/post/2017-03-09/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://wizarot.me/post/2017-03-09/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="http://wizarot.me/post/2017-03-09/">我的街机模拟器制作笔记-潘多拉盒子4</a>
+      <a href="https://wizarot.me/post/2017-03-09/">我的街机模拟器制作笔记-潘多拉盒子4</a>
     </nav>
     
   </div>
@@ -520,13 +436,13 @@ server {
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="http://wizarot.me/post/2019-04-03/">参加 ARTS 计划日记 2019-04-03</a>
+      <a href="https://wizarot.me/post/2019-04-03/">参加 ARTS 计划日记 2019-04-03</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="http://wizarot.me/post/2019-04-03/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://wizarot.me/post/2019-04-03/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -557,7 +473,7 @@ server {
 
 </div>
 </div>
-<script src="http://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
 
 
 <script>
