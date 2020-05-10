@@ -5,19 +5,21 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.20.7" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>为什么你会越来越忙 &middot; Wizarot Site 记录点平时写的东西</title>
 
+    
+
   
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -30,21 +32,30 @@
   <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
   
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西" href="https://wizarot.meindex.xml" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="https://wizarot.meimg/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
+
+  
+  
 
 </head>
 
@@ -68,6 +79,12 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
@@ -78,60 +95,12 @@
       
         </li>
       
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
-      
-        </li>
-      
     </ul>
   </div>
 
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://wizarot.meindex.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-
-    
-
-    
-
-    
-
-    
-
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://weibo.com/wizarot" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
-    </li>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
     
 
     
@@ -146,8 +115,72 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/wizarot" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+      <a class="pure-menu-link" href="http://weibo.com/wizarot" rel="me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
     </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/wizarot" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://gitlab.com/*" rel="me" target="_blank"><i class="fab fa-gitlab fa-fw"></i>GitLab</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -158,11 +191,11 @@
 </div>
 
 
-  <div class="pure-g">
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div>
+  <div class="small-print">
     <small>&copy; 2020. All rights reserved.</small>
   </div>
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
     <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
   </div>
@@ -202,36 +235,82 @@
 </div>
 
   <p>经济学家凯恩斯曾经预言,随着科技的发展,我们到2028年没人每天只需要工作3个小时.可是似乎大家都没这感觉,而是觉得工作越来越忙了.(尤其程序员,那是加班到死啊!) 他这个预言实在不靠谱啊!</p>
-
 <p>可是,为什么我们没有越来越闲,反而更忙了呢? 微信公众号 <code>know your self</code> 给我们了一种解释.挺有意思的:</p>
-
 <p>首先,从平均值来说,我们的闲暇时间确实增加了.可是问题是并不是所有人都闲了,而是闲的人更闲了,忙的人却更忙了. 在美国,通过调查发现越是收入高的人越是感觉时间不够用.越是职场和工作中的精英人物,每天平均的工作时间就越长. 按理说这些处在金字塔顶端的人物,应该最有闲暇时间,但是却养成了忙碌的生活习惯. 这是为什么呢? 一种解释是他们这些人比其他人更能感受到时间的经济价值,换句话说他们的时间更值钱,所以舍不得浪费.</p>
-
 <p>可是我们并没有觉得自己工作有什么价值,也没那么高收入,为什么也很忙呢?</p>
-
 <p>第二,感觉忙的原因,休闲与工作之间的界限开始模糊了. 对程序员来说,尤其是运维人员,很少有完全不工作的闲暇时间,但是工作过程中也会聊聊天,上上社交网站休闲一下. 大家都是 多线程进行工作,先不说工作效率的问题,根据心理学调查,和那些每次只专心完成一件工作的人相比,这种多线程工作方式会让人觉得自己更加忙碌. 说白了,忙是一种主观感受,而现在几乎没有完全不工作的时间,即使你不上班可能也会做些和工作相关的事儿. 即使你工作时候活儿很少,但因为你还要刷刷微博什么的,所以你把这些时间和事儿都不知不觉的算到工作里面了.</p>
-
 <p>第三,互联网时代,我们每时每刻都要面临非常多的选择,而选择吃什么买什么做什么的过程,也会给人带来额外的压力. 你会觉得自己有很多书没读,很多地方没去,遇到一些小问题也会经常让自己感到压力山大,尝尝因为不起眼的一点问题就把自己推到了抓狂的境地. 互联网时代,给我们带来了信息的扩大,但由此而来的是选择实在太多了,你需要不停进行思考改2做什么事儿,当然会觉得自己忙了. 所以咯,实际上让我们觉得忙的并不是工作的绝对时间长度,而是我们的主观感受.</p>
-
 <p>其实忙并不一定都是坏事儿,忙给我们也带来了不少好处.因为我们本性都是想闲着没事儿干,但事实上忙碌却可以提高幸福感.  所以嘛,如果你觉得自己忙完全没时间,千万别焦虑,因为这是好事儿.它一方面说明你正在往更高收入的群体靠近,另一方面也说明你如果帮朋友做事儿肯定比一般人效率高很多的. 所以啦,还是快让自己忙起来吧!</p>
-
 <p>PS. 如果要找人帮你办事儿,你会找忙着的还是闲着的同伴呢? 按说肯定该找闲着的,但是,科研调查给出的结论却是:去找那些忙着的人.因为那些人,不仅工作效率高,还能很好的对抗拖延症.</p>
+
+  
+  <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
+<ul class="share-buttons">
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwizarot.me%2fpost%2f2016-05-03%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fwizarot.me%2fpost%2f2016-05-03%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2fwizarot.me%2fpost%2f2016-05-03%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2fwizarot.me%2fpost%2f2016-05-03%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwizarot.me%2fpost%2f2016-05-03%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2fwizarot.me%2fpost%2f2016-05-03%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	</li>
+</ul>
+
+
+<style>
+	ul.share-buttons{
+	  list-style: none;
+	  padding: 0;
+	}
+
+	ul.share-buttons li{
+	  display: inline;
+	}
+
+	ul.share-buttons .sr-only{
+	  position: absolute;
+	  clip: rect(1px 1px 1px 1px);
+	  clip: rect(1px, 1px, 1px, 1px);
+	  padding: 0;
+	  border: 0;
+	  height: 1px;
+	  width: 1px;
+	  overflow: hidden;
+	}
+</style>
 
 
   
 <div class="prev-next-post pure-g">
-  <div class="pure-u-1 pure-u-md-1-2">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://wizarot.me/post/2016-05-02/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://wizarot.me/post/2016-05-02/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>如何带好职场新人</a>
+      <a href="https://wizarot.me/post/2016-05-02/">如何带好职场新人</a>
     </nav>
     
   </div>
-  <div class="pure-u-1 pure-u-md-1-2">
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://wizarot.me/post/2016-05-04/">为什么说读书计划是懒惰的勤奋<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
+      <a href="https://wizarot.me/post/2016-05-04/">为什么说读书计划是懒惰的勤奋</a>
     </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://wizarot.me/post/2016-05-04/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -239,42 +318,31 @@
 
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'wizarot';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 
 </div>
 
 </div>
 </div>
-<script src="https://wizarot.mejs/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/menus.js"></script>
 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74990530-1', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-74990530-1', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
+
+
+
+
 
 
 

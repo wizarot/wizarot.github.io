@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A.R.T.S on Wizarot Site 记录点平时写的东西</title>
@@ -19,7 +19,7 @@
       
       <guid>https://wizarot.me/post/2019-04-03/</guid>
       <description>参加 ARTS 计划日记 A 部分: 今天完成 LeetCode 33题. (其实还应该有31题,然而,真的没看懂题目) 以下是我的解法(PHP版本) , 还有因为各人喜好问题,并没有用递归.
-function search($nums,$target) { // 还有一个直接foreach查找的,虽然时间复杂度是 O(n),但实际执行比这个快!!! // LogN的复杂度,需要用到判断条件有点复杂的折半查找 //每次折成两半之后,都会有一个是有序数组,另一个是无序的,那么有序的好判断,没有在有序数组中,就继续折半查找无序的部分 // 直接上4指针?还是递归? $low = 0; $heigh = count($nums)-1; while ($low &amp;lt;= $heigh) { // 情况1 if ($nums[$low]&amp;gt;$target &amp;amp;&amp;amp; $nums[$heigh] &amp;lt; $target) { // 不用继续找了,肯定没有.. return -1; } // 分两半 $mid = round(($heigh-$low)/2)+$low; echo &amp;quot;{$low}:{$mid}:{$heigh}\n&amp;quot;; // 看看运气,是否刚好找到了? if ($nums[$mid] == $target) { return $mid; } if ($nums[$low] == $target) { return $low; } if ($nums[$heigh] == $target) { return $heigh; } // 特殊的,判断到这里就要看看是否两个指针已经交汇了 if($low == $heigh || $mid == $low || $mid == $heigh){ return -1; } // 当然通常运气不好那么好直接找到,那么判断左右两边,哪边刚好是正常的数组 if($nums[$low] &amp;lt;= $nums[$mid] ){ // 左边是正常数组 // 看看目标是否在正常数组中 if($nums[$low]&amp;lt; $target &amp;amp;&amp;amp; $target &amp;lt; $nums[$mid]){ // 没的说,继续找的就是这个数组了.</description>
+function search($nums,$target) { // 还有一个直接foreach查找的,虽然时间复杂度是 O(n),但实际执行比这个快!!! // LogN的复杂度,需要用到判断条件有点复杂的折半查找 //每次折成两半之后,都会有一个是有序数组,另一个是无序的,那么有序的好判断,没有在有序数组中,就继续折半查找无序的部分 // 直接上4指针?还是递归? $low = 0; $heigh = count($nums)-1; while ($low &amp;lt;= $heigh) { // 情况1 if ($nums[$low]&amp;gt;$target &amp;amp;&amp;amp; $nums[$heigh] &amp;lt; $target) { // 不用继续找了,肯定没有.. return -1; } // 分两半 $mid = round(($heigh-$low)/2)+$low; echo &amp;#34;{$low}:{$mid}:{$heigh}\n&amp;#34;; // 看看运气,是否刚好找到了? if ($nums[$mid] == $target) { return $mid; } if ($nums[$low] == $target) { return $low; } if ($nums[$heigh] == $target) { return $heigh; } // 特殊的,判断到这里就要看看是否两个指针已经交汇了 if($low == $heigh || $mid == $low || $mid == $heigh){ return -1; } // 当然通常运气不好那么好直接找到,那么判断左右两边,哪边刚好是正常的数组 if($nums[$low] &amp;lt;= $nums[$mid] ){ // 左边是正常数组 // 看看目标是否在正常数组中 if($nums[$low]&amp;lt; $target &amp;amp;&amp;amp; $target &amp;lt; $nums[$mid]){ // 没的说,继续找的就是这个数组了.</description>
     </item>
     
   </channel>

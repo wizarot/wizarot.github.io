@@ -5,19 +5,21 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.20.7" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>Wizarot Site 记录点平时写的东西</title>
 
+    
+
   
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -30,21 +32,33 @@
   <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
   
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西" href="https://wizarot.meindex.xml" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西"
+    href='https://wizarot.me/index.xml' />
+  
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="https://wizarot.meimg/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
+
+  
+  
 
 </head>
 
@@ -68,6 +82,12 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
@@ -78,39 +98,16 @@
       
         </li>
       
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
-      
-        </li>
-      
     </ul>
   </div>
 
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://wizarot.meindex.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-
-    
-
-    
-
-    
-
-    
-
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://weibo.com/wizarot" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+      <a class="pure-menu-link" href='https://wizarot.me/index.xml'><i
+          class="fas fa-rss"></i>RSS</a>
     </li>
     
 
@@ -125,6 +122,26 @@
     
 
     
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://weibo.com/wizarot" rel="me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -146,8 +163,32 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/wizarot" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+      <a class="pure-menu-link" href="https://github.com/wizarot" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
     </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://gitlab.com/*" rel="me" target="_blank"><i class="fab fa-gitlab fa-fw"></i>GitLab</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -158,11 +199,11 @@
 </div>
 
 
-  <div class="pure-g">
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div>
+  <div class="small-print">
     <small>&copy; 2020. All rights reserved.</small>
   </div>
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
     <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
   </div>
@@ -180,6 +221,47 @@
 </div>
 
 <div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://wizarot.me/post/2016-05-17/">如何找到你身边靠谱的人</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>17 May 2016, 21:49</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  我们现在无论是交朋友,谈恋爱,还是和别人一起联手创业,找到靠谱的人太重要了.作家雾满拦江在一篇文章里说,靠谱的人应该满足一下几个特点:
+1.有过人的智力,能够准确预判没做过的事情的周期. 通常做好一件事情需要很长时间,不靠谱的人总觉得很快就会做好.而做事儿靠谱的人,会尽量把事情想得最困难,而且仍然放手去做的人.
+2.不确定式思维,做事不求一个直线结果. 做人的人品要有确定性,这样大家才放心.但一个人做事儿的方法和方向,要有不确定性.市场变化很快,很可能开始打算做奶嘴的厂子最后去做了避孕套. 如果一个人这样想问题,那么说明这人脑子比较清醒,知道自己在做什么,而且不钻牛角尖,能够随机应变.就是个靠谱的做事儿伙伴.
+3.思维周密,喜欢布闲棋. 这样的人布局具有周密性,在一个很长的周期里,肯定需要很多的资源和部件,说不定他之前做的什么布置在后来就发生巨大的作用了.
+4.接受因人成事,不拘泥.
+5.对人无成见,始终在路上.人总是没有确定的形态,总是要有一个发展的眼光看待别人,才有利于个人发展.
+6.具有自己的实用型知识体系,化繁为简,容纳异端.这样的人爱读书还不死读书,能够善于整合观点,有自己的思维体系,能把复杂的问题简单化,并且跳出现实的条条框框.
+  </p>
+
+  
+</article>
+
   
     <article>
   <header>
@@ -371,9 +453,9 @@ PS.工作中,千万不要陷入不停处理小事儿的陷阱. 尽量想办法�
 
   <p>
   讲故事是现代人的必备技能,作为创业者,给自己和自己的品牌讲好故事更是重要. 要讲好一个品牌故事,我们可以从电影情节中借鉴,可以总结出以下五个要点:
-1.&ldquo;挑战&rdquo;故事: 故事主人公,遇到了难以逾越的挑战,观众就被他们不畏艰难、战胜挑战的桥段深深吸引.像&lt;担幸福来敲门&gt;,男主角经济破产,穷到只能和儿子挤在厕所马桶上过夜.但男主积极进取,最终经过严酷考验和不懈努力,终于成为华尔街精英成功翻身.
-2.&ldquo;反差&rdquo;情节:将两个巨大反差的事物放在一起,塑造强烈冲击感.如美剧&lt;越狱&gt;,男主角作为一个高收入精英人士,主动成为监狱里的囚犯,这么大的反差就制造出有趣的故事来.
-3.&ldquo;反常规&rdquo;情节:一个故事如果能以打破常识的方式来解决人们心中的疑惑,就能吸引人不断的读下去. 例如&lt;盗梦空间&gt;中,要说服一个人不是像通常对其进行说服,而是制造一个梦境,把信念植入到对方的心里去.
+1.&ldquo;挑战&quot;故事: 故事主人公,遇到了难以逾越的挑战,观众就被他们不畏艰难、战胜挑战的桥段深深吸引.像&lt;担幸福来敲门&gt;,男主角经济破产,穷到只能和儿子挤在厕所马桶上过夜.但男主积极进取,最终经过严酷考验和不懈努力,终于成为华尔街精英成功翻身.
+2.&ldquo;反差&quot;情节:将两个巨大反差的事物放在一起,塑造强烈冲击感.如美剧&lt;越狱&gt;,男主角作为一个高收入精英人士,主动成为监狱里的囚犯,这么大的反差就制造出有趣的故事来.
+3.&ldquo;反常规&quot;情节:一个故事如果能以打破常识的方式来解决人们心中的疑惑,就能吸引人不断的读下去. 例如&lt;盗梦空间&gt;中,要说服一个人不是像通常对其进行说服,而是制造一个梦境,把信念植入到对方的心里去.
 4.&ldquo;救赎&rdquo;: 说的是原本堕落的人良心发现,浪子回头完成自我救赎的桥段. 比如&lt;老男孩&gt;说的两个生活落魄,不思进取的老男人,最终通过努力参加选秀活动找回昔日的自豪感的故事.
 5.&ldquo;惩罚&rdquo;:这类故事通常是成功的人变得堕落,然后受到了惩罚的情节. 比如&lt;华尔街之狼&gt;,就是主角在股票市场上获得巨大成功后,堕落的故事.
 挑战、反差、反常规、救赎、惩罚,这五个电影情节能帮你把故事讲的跌宕起伏,创造出更好的传播效果.希望能够有所借鉴,没事儿多练练,讲故事的能力真的非常重要.
@@ -414,9 +496,9 @@ PS.工作中,千万不要陷入不停处理小事儿的陷阱. 尽量想办法�
   成功学,励志类的书总是那么畅销,可是看过的人都知道,看这东西并不会使你更容易成功.还会总是耽误事儿.那么怎么才能成功呢?
 万维刚在新书 &lt;智识份子&gt; 中说,你成功不是因为不努力,而可能是因为 努力方法不对.
 成功学总是关注一些细枝末节的东西上,仅仅彰显了成功人士的个性,却没提到底什么让其成功了. 而且成功学大多都强调电光火石的瞬间,却没说着之前,成功人士的默默努力和无数积累是怎么得来的. 也就是,你看着特激情澎湃,但实际重要的东西都没学到,回头你照做那就只能悲剧了.
-那么应该怎么做才有有呢? 万维刚的书里给出的答案是&rdquo;刻意练习&rdquo;,这个概念我最早是在&lt;异类&gt;中看到. 刻意练习会刺激大脑产生一种叫髓磷脂的化学物质,将你练习所使用的神经回路进行包裹,这就像升级普通公路成高速公路,一旦成功,将会使你相应的大脑通路加快处理速度3000倍(速度不重要,反正知道有这个事就行了). 只有经过刻意练习的神经通路,才可能被升级成这样的道路.
+那么应该怎么做才有有呢? 万维刚的书里给出的答案是&quot;刻意练习&rdquo;,这个概念我最早是在&lt;异类&gt;中看到. 刻意练习会刺激大脑产生一种叫髓磷脂的化学物质,将你练习所使用的神经回路进行包裹,这就像升级普通公路成高速公路,一旦成功,将会使你相应的大脑通路加快处理速度3000倍(速度不重要,反正知道有这个事就行了). 只有经过刻意练习的神经通路,才可能被升级成这样的道路.
 如何做刻意练习呢?
-第一,控制在&rdquo;学习区&rdquo;练习. 所谓学习区,就是你在做这个练习时,及不会觉得简单到根本不用去想,也不会难到根本做不到. 需要努努力才能掌握到的技能难度即可.
+第一,控制在&quot;学习区&quot;练习. 所谓学习区,就是你在做这个练习时,及不会觉得简单到根本不用去想,也不会难到根本做不到. 需要努努力才能掌握到的技能难度即可.
 第二,做大量重复训练. 说白了就是熟能生巧,一旦你将一种能力练习到熟练到一定程度,那么你能做到的事儿,就非常不得了了. 不能小看反复练习这一过程,根据我的实际经验来看,反复练习确实非常有效.
 第三,持续获得反馈. 很多时候,不能仅仅将学习停留在自学上面,你需要得到反馈,也就是其他人给你随时指出,哪里做得对,哪里做得不够好.只有反复修改,才让你在学习上事半功倍.
 第四,精神要高度集中. 选择一个好的时间段,并且控制你的注意力集中.你的注意力集中程度,是你学习效果好坏的关键.
@@ -545,58 +627,17 @@ ps.好好去试试吧! 这点东西并不能真正给你很大提升,仅仅是�
 </article>
 
   
-    <article>
-  <header>
-    <h2><a href="https://wizarot.me/post/2016-05-07/">什么样的公司,是靠谱的公司</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>07 May 2016, 10:28</time>
-  </div>
 
   
 
-  
-  
-  
-  
 
-  
-  
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  资深IT人曹政,在36Kr平台写了平台给我们分析了什么公司更靠谱.
-什么是所谓的狼性? 总结下来就是老板的责任要员工扛,风险要员工来担,别管老板多过分方向多不靠谱,员工都要想办法让公司盈利. 这个算过分的要求么? 回报给到位就不算过分.
-很多公司都动不动叫我们要推行狼性文化,这样的公司到底考不考谱呢? 总结来说,如果老板叫你要狼性,那么他一定要有人性.任何不谈回报,只谈狼性的公司你都要小心了.
-那么什么样的回报更实惠? 加工资还是给期权? 实际上,靠着期权发财的员工,除非少数眼光独到的以外,其它都是靠运气. 具体怎么鉴定公司福利是否靠谱呢?
-1.如果企业处在草创期,公司规模和财务状况不好,那么你拿期权忍受低薪可以理解.但是公司已经规模化盈利了,却依然保持低薪不给你分红权益那么显然就有问题.
-2.如果公司给一线干活的人不合理的股权比例,那么就要小心点.好的创业团队一定给后来的人才和员工流出一定的股权比例.
-3.如果公司经常变更注册,或注册实体太多,就要注意公司是不是借着变更在股权上动手脚.当然可能是给员工增配,也肯能是给大股东,要具体分析.
-4.公司的配股数和期权数不重要,折算比例才重要.很多人拿到几万几十万配股,结果大股东拿着几十亿股,按比例算下来根本没多少钱.
-身为一个有理性思维的程序员,先不要被老板忽悠,要根据这些标准衡量下,是否值得你用狼性为他们拼命.
-  </p>
-
-  
-</article>
-
-  
-
-  
 <nav class="pagination" role="pagination">
   
-  <a href="https://wizarot.me/"><i class="fa fa-angle-double-left"></i></a>
+  <a href="https://wizarot.me/"><i class="fa fa-chevron-left"></i></a>
   
-  <span>2 / 7</span>
+  <span>&nbsp;2 / 7&nbsp;</span>
   
-  <a href="https://wizarot.me/page/3/"><i class="fa fa-angle-double-right"></i></a>
+  <a href="https://wizarot.me/page/3/"><i class="fa fa-chevron-right"></i></a>
   
 </nav>
 
@@ -606,19 +647,26 @@ ps.好好去试试吧! 这点东西并不能真正给你很大提升,仅仅是�
 
 </div>
 </div>
-<script src="https://wizarot.mejs/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/menus.js"></script>
 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74990530-1', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-74990530-1', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
+
+
+
+
 
 
 

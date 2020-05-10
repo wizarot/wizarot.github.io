@@ -5,19 +5,21 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.20.7" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>知识也能让人变蠢 &middot; Wizarot Site 记录点平时写的东西</title>
 
+    
+
   
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -30,21 +32,30 @@
   <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
   
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西" href="https://wizarot.meindex.xml" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="https://wizarot.meimg/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
+
+  
+  
 
 </head>
 
@@ -68,6 +79,12 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
@@ -78,60 +95,12 @@
       
         </li>
       
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
-      
-        </li>
-      
     </ul>
   </div>
 
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://wizarot.meindex.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-
-    
-
-    
-
-    
-
-    
-
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://weibo.com/wizarot" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
-    </li>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
     
 
     
@@ -146,8 +115,72 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/wizarot" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+      <a class="pure-menu-link" href="http://weibo.com/wizarot" rel="me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
     </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/wizarot" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://gitlab.com/*" rel="me" target="_blank"><i class="fab fa-gitlab fa-fw"></i>GitLab</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -158,11 +191,11 @@
 </div>
 
 
-  <div class="pure-g">
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div>
+  <div class="small-print">
     <small>&copy; 2020. All rights reserved.</small>
   </div>
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
     <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
   </div>
@@ -201,43 +234,88 @@
 
 </div>
 
-  
-
-<h3 id="都说知识改变命运-但知识实际也有好坏之分">都说知识改变命运,但知识实际也有好坏之分.</h3>
-
+  <h3 id="都说知识改变命运但知识实际也有好坏之分">都说知识改变命运,但知识实际也有好坏之分.</h3>
 <p>最近有篇文章说,知识分活性知识和惰性知识.</p>
-
 <blockquote>
 <p>惰性知识,是猪一样的队友,要极力避免.所谓惰性知识指的是那些碎片化的知识,这些东西听起来很高大上,但没什么实际用途,也没办法帮到你任何事情,这些内容在你大脑中孤立的存在,没有任何活力.</p>
-
+</blockquote>
+<blockquote>
 <p>活性知识,是在你脑中成体系的知识,有活力连城片可以自如运行,这些东西形成你的思维体系.这些知识是活性的,可以随时调用帮你面对各种情况.</p>
 </blockquote>
-
 <p>现在互联网过于发达,你获取到了非常多的知识,什么都知道,可关上电脑,你就什么都记不得了.没什么长进.</p>
-
 <h3 id="如何避免陷入惰性知识的陷阱呢">如何避免陷入惰性知识的陷阱呢?</h3>
-
 <p>首先,专注核心知识. 真正核心的知识只有三类: 数学,逻辑,哲学. 所有知识都建立在他们基础上,因此,一定要掌握具体的思维方法,把这些知识用活,使其成为你知识的基础.</p>
-
 <p>其次,正确的看待知识. 除了核心知识外,其它所有的知识都只是假说,没法确定真伪,而研究过程仅仅是让我们确定哪些一定不对,从而更接近事实.</p>
-
 <p>最后,要学会利用数学和逻辑工具构建自己的知识体系,这样才能把惰性知识转化为活性知识,让一些碎片化的东西,成为你知识图谱中的一部分. 使用搜索引擎,不要仅仅搜索结论,而要进行体系性搜索,了解得出这个结论的过程,从预判到猜想到实验的设计最后到得出结论的过程,这个过程中渗透了数学和逻辑的思维方式,这些思维方式才是最最宝贵的财富. 这一过程会帮助你大脑形成体系化的认知能力,同时也就把惰性知识转化为了活性知识.</p>
+
+  
+  <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
+<ul class="share-buttons">
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwizarot.me%2fpost%2f2016-04-29%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fwizarot.me%2fpost%2f2016-04-29%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2fwizarot.me%2fpost%2f2016-04-29%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2fwizarot.me%2fpost%2f2016-04-29%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwizarot.me%2fpost%2f2016-04-29%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2fwizarot.me%2fpost%2f2016-04-29%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	</li>
+</ul>
+
+
+<style>
+	ul.share-buttons{
+	  list-style: none;
+	  padding: 0;
+	}
+
+	ul.share-buttons li{
+	  display: inline;
+	}
+
+	ul.share-buttons .sr-only{
+	  position: absolute;
+	  clip: rect(1px 1px 1px 1px);
+	  clip: rect(1px, 1px, 1px, 1px);
+	  padding: 0;
+	  border: 0;
+	  height: 1px;
+	  width: 1px;
+	  overflow: hidden;
+	}
+</style>
 
 
   
 <div class="prev-next-post pure-g">
-  <div class="pure-u-1 pure-u-md-1-2">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://wizarot.me/post/2016-04-28/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://wizarot.me/post/2016-04-28/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>中日韩的教育效率为啥都很差</a>
+      <a href="https://wizarot.me/post/2016-04-28/">中日韩的教育效率为啥都很差</a>
     </nav>
     
   </div>
-  <div class="pure-u-1 pure-u-md-1-2">
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://wizarot.me/post/2016-04-30/">分享一些关于健康的知识<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
+      <a href="https://wizarot.me/post/2016-04-30/">分享一些关于健康的知识</a>
     </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://wizarot.me/post/2016-04-30/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -245,42 +323,31 @@
 
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'wizarot';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 
 </div>
 
 </div>
 </div>
-<script src="https://wizarot.mejs/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/menus.js"></script>
 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74990530-1', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-74990530-1', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
+
+
+
+
 
 
 

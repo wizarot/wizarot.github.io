@@ -5,19 +5,21 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.20.7" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>Wizarot Site 记录点平时写的东西</title>
 
+    
+
   
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -30,21 +32,33 @@
   <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
   
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西" href="https://wizarot.meindex.xml" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西"
+    href='https://wizarot.me/index.xml' />
+  
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="https://wizarot.meimg/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
+
+  
+  
 
 </head>
 
@@ -68,6 +82,12 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
@@ -78,39 +98,16 @@
       
         </li>
       
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
-      
-        </li>
-      
     </ul>
   </div>
 
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://wizarot.meindex.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-
-    
-
-    
-
-    
-
-    
-
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://weibo.com/wizarot" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+      <a class="pure-menu-link" href='https://wizarot.me/index.xml'><i
+          class="fas fa-rss"></i>RSS</a>
     </li>
     
 
@@ -125,6 +122,26 @@
     
 
     
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://weibo.com/wizarot" rel="me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -146,8 +163,32 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/wizarot" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+      <a class="pure-menu-link" href="https://github.com/wizarot" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
     </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://gitlab.com/*" rel="me" target="_blank"><i class="fab fa-gitlab fa-fw"></i>GitLab</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -158,11 +199,11 @@
 </div>
 
 
-  <div class="pure-g">
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div>
+  <div class="small-print">
     <small>&copy; 2020. All rights reserved.</small>
   </div>
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
     <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
   </div>
@@ -180,6 +221,43 @@
 </div>
 
 <div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://wizarot.me/post/2020-04-22/">学习使用Cocos Creator开发小游戏</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>22 Apr 2020, 12:18</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  学习使用Cocos Creator开发小游戏 学一点小游戏的开发.
+飞刀游戏
+贪吃蛇
+  </p>
+
+  
+</article>
+
   
     <article>
   <header>
@@ -210,7 +288,7 @@
 
   <p>
   A LeetCode 34.&lt;在排序数组中查找元素的第一个和最后一个位置&gt; 还是不喜欢递归,我选择三指针解决问题:
-function searchRange($nums, $target) { // 没得说..要求logN的查找直接用折半查找 $l = 0; $max = count($nums)-1; $r = $max; while ($l &lt;= $r) { // 先看中间指针,再分左右.比较麻烦的是刚好中间指针是值,那么就需要向左右一直找下去? $mid = floor(($r-$l)/2)+$l; // echo &quot;{$l}:{$mid}:$r\n&quot;; if($nums[$mid]&gt;$target){ // 在左边 $r = $mid; }elseif ($nums[$mid]&lt;$target) { // 在右边 $l = $mid+1; }else { // 刚好找到这种 // 两种方式,1.简单的直接向左右扩展直到完成. 2.递归继续折半查找(时间复杂度会更低一点,但代码复杂) $l = $mid; $r = $mid; // echo &quot;{$l}:{$mid}:$r\n&quot;; $flag = true; while ($flag) { // echo &quot;{$l}:{$mid}:$r\n&quot;; $flag = false; // 指针越界!
+function searchRange($nums, $target) { // 没得说..要求logN的查找直接用折半查找 $l = 0; $max = count($nums)-1; $r = $max; while ($l &lt;= $r) { // 先看中间指针,再分左右.比较麻烦的是刚好中间指针是值,那么就需要向左右一直找下去? $mid = floor(($r-$l)/2)+$l; // echo &#34;{$l}:{$mid}:$r\n&#34;; if($nums[$mid]&gt;$target){ // 在左边 $r = $mid; }elseif ($nums[$mid]&lt;$target) { // 在右边 $l = $mid+1; }else { // 刚好找到这种 // 两种方式,1.简单的直接向左右扩展直到完成. 2.递归继续折半查找(时间复杂度会更低一点,但代码复杂) $l = $mid; $r = $mid; // echo &#34;{$l}:{$mid}:$r\n&#34;; $flag = true; while ($flag) { // echo &#34;{$l}:{$mid}:$r\n&#34;; $flag = false; // 指针越界!
   </p>
 
   
@@ -240,7 +318,7 @@ function searchRange($nums, $target) { // 没得说..要求logN的查找直接�
   <div>
     <i class="fa fa-folder fa-fw"></i>
     
-      <a class="post-taxonomy-topic" href="https://wizarot.metopics/a.r.t.s">A.R.T.S</a>
+      <a class="post-taxonomy-topic" href="https://wizarot.me/topics/a.r.t.s">A.R.T.S</a>
     
   </div>
   
@@ -257,7 +335,7 @@ function searchRange($nums, $target) { // 没得说..要求logN的查找直接�
 
   <p>
   参加 ARTS 计划日记 A 部分: 今天完成 LeetCode 33题. (其实还应该有31题,然而,真的没看懂题目) 以下是我的解法(PHP版本) , 还有因为各人喜好问题,并没有用递归.
-function search($nums,$target) { // 还有一个直接foreach查找的,虽然时间复杂度是 O(n),但实际执行比这个快!!! // LogN的复杂度,需要用到判断条件有点复杂的折半查找 //每次折成两半之后,都会有一个是有序数组,另一个是无序的,那么有序的好判断,没有在有序数组中,就继续折半查找无序的部分 // 直接上4指针?还是递归? $low = 0; $heigh = count($nums)-1; while ($low &lt;= $heigh) { // 情况1 if ($nums[$low]&gt;$target &amp;&amp; $nums[$heigh] &lt; $target) { // 不用继续找了,肯定没有.. return -1; } // 分两半 $mid = round(($heigh-$low)/2)+$low; echo &quot;{$low}:{$mid}:{$heigh}\n&quot;; // 看看运气,是否刚好找到了? if ($nums[$mid] == $target) { return $mid; } if ($nums[$low] == $target) { return $low; } if ($nums[$heigh] == $target) { return $heigh; } // 特殊的,判断到这里就要看看是否两个指针已经交汇了 if($low == $heigh || $mid == $low || $mid == $heigh){ return -1; } // 当然通常运气不好那么好直接找到,那么判断左右两边,哪边刚好是正常的数组 if($nums[$low] &lt;= $nums[$mid] ){ // 左边是正常数组 // 看看目标是否在正常数组中 if($nums[$low]&lt; $target &amp;&amp; $target &lt; $nums[$mid]){ // 没的说,继续找的就是这个数组了.
+function search($nums,$target) { // 还有一个直接foreach查找的,虽然时间复杂度是 O(n),但实际执行比这个快!!! // LogN的复杂度,需要用到判断条件有点复杂的折半查找 //每次折成两半之后,都会有一个是有序数组,另一个是无序的,那么有序的好判断,没有在有序数组中,就继续折半查找无序的部分 // 直接上4指针?还是递归? $low = 0; $heigh = count($nums)-1; while ($low &lt;= $heigh) { // 情况1 if ($nums[$low]&gt;$target &amp;&amp; $nums[$heigh] &lt; $target) { // 不用继续找了,肯定没有.. return -1; } // 分两半 $mid = round(($heigh-$low)/2)+$low; echo &#34;{$low}:{$mid}:{$heigh}\n&#34;; // 看看运气,是否刚好找到了? if ($nums[$mid] == $target) { return $mid; } if ($nums[$low] == $target) { return $low; } if ($nums[$heigh] == $target) { return $heigh; } // 特殊的,判断到这里就要看看是否两个指针已经交汇了 if($low == $heigh || $mid == $low || $mid == $heigh){ return -1; } // 当然通常运气不好那么好直接找到,那么判断左右两边,哪边刚好是正常的数组 if($nums[$low] &lt;= $nums[$mid] ){ // 左边是正常数组 // 看看目标是否在正常数组中 if($nums[$low]&lt; $target &amp;&amp; $target &lt; $nums[$mid]){ // 没的说,继续找的就是这个数组了.
   </p>
 
   
@@ -296,8 +374,8 @@ function search($nums,$target) { // 还有一个直接foreach查找的,虽然时
   </header>
 
   <p>
-  基本配置篇  MAC拿到手之后需要注册一个AppStore账号和Github.com账号.其余公司账号密码会专门分配,请参考使用. 生成自己的ssh_key. 基本操作在Launchpad的其他&gt;终端 中进行命令行操作,请熟悉命令行操作,开发中会经常用到. 这里基本使用的命令是(命令行操作基础如果了解可以略过,不了解就稍微看一下或者问问同事):  &gt; ls (显示当前目录内容) &gt; cd xxx (进入某一个目录)  打开后会默认在当前用户的home目录. 执行ls ~/.ssh 查看是否存在这个目录,正常新机器是不存在的,如果有请咨询同事. 如果不存在,那么我们就新建一个,这将会生成.ssh目录和下面的文件.ssh目录是隐藏目录,新建之后用ls不能直接看到,这个很正常. 执行命令: ssh-keygen -t rsa -C &quot;youremail@example.com” 里面的email用公司分配给你的即可.后面还有一些询问,都直接回车默认.
- 安装xcode: 通过AppStore安装xcode.完成后,需要运行一次,同意里面的协议,然后关掉即可.在命令行工具,执行xcode-select --install完成安装xcode命令行工具. 安装brew(OSX的软件包管理工具,之后的软件等安装,尽量使用brew来统一安装和管理,官网:http://brew.sh/index_zh-cn ),命令行执行:  &gt; /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”   安装iTerm2,更好的命令行终端软件: brew install iterm2 完成安装,如果在过程中发生错误同样google或找同事帮助.安装完成后,可以在Launchpad中找到,直接启动.并固定在Dock上面吧! 这是你的好朋友. zsh oh-my-zsh安装,配置.完成安装之后,重新打开一个iterm窗口,查看下效果.  &gt; brew install zsh zsh-completions #安装zsh &gt; chsh -s $(which zsh) #切换zsh为默认shell &gt; sh -c &quot;$(curl -fsSL https://raw.
+  基本配置篇  MAC拿到手之后需要注册一个AppStore账号和Github.com账号.其余公司账号密码会专门分配,请参考使用. 生成自己的ssh_key. 基本操作在Launchpad的其他&gt;终端 中进行命令行操作,请熟悉命令行操作,开发中会经常用到. 这里基本使用的命令是(命令行操作基础如果了解可以略过,不了解就稍微看一下或者问问同事):  &gt; ls (显示当前目录内容) &gt; cd xxx (进入某一个目录) 打开后会默认在当前用户的home目录. 执行ls ~/.ssh 查看是否存在这个目录,正常新机器是不存在的,如果有请咨询同事. 如果不存在,那么我们就新建一个,这将会生成.ssh目录和下面的文件.ssh目录是隐藏目录,新建之后用ls不能直接看到,这个很正常. 执行命令: ssh-keygen -t rsa -C &quot;youremail@example.com” 里面的email用公司分配给你的即可.后面还有一些询问,都直接回车默认.
+ 安装xcode: 通过AppStore安装xcode.完成后,需要运行一次,同意里面的协议,然后关掉即可.在命令行工具,执行xcode-select --install完成安装xcode命令行工具. 安装brew(OSX的软件包管理工具,之后的软件等安装,尽量使用brew来统一安装和管理,官网:http://brew.sh/index_zh-cn ),命令行执行:  &gt; /usr/bin/ruby -e &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”  安装iTerm2,更好的命令行终端软件: brew install iterm2 完成安装,如果在过程中发生错误同样google或找同事帮助.安装完成后,可以在Launchpad中找到,直接启动.并固定在Dock上面吧! 这是你的好朋友. zsh oh-my-zsh安装,配置.完成安装之后,重新打开一个iterm窗口,查看下效果.  &gt; brew install zsh zsh-completions #安装zsh &gt; chsh -s $(which zsh) #切换zsh为默认shell &gt; sh -c &#34;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&#34;  git工具:  &gt; brew install git  其他可选项目  常用文本编辑器sublime3  &gt; brew tap caskroom/cask &gt; brew install brew-cask &gt; brew tap caskroom/versions &gt; brew cask install sublime-text  TODO: 常用快捷键,有用的app推荐,iTerm主题和配置,MAC系统方便的配置等  PHP开发篇  安装php :推荐安装两个PHP版本 5.
   </p>
 
   
@@ -544,54 +622,17 @@ MySQL has support for full-text indexing and searching: A full-text index in MyS
 </article>
 
   
-    <article>
-  <header>
-    <h2><a href="https://wizarot.me/post/2016-05-17/">如何找到你身边靠谱的人</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>17 May 2016, 21:49</time>
-  </div>
 
   
 
-  
-  
-  
-  
 
-  
-  
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  我们现在无论是交朋友,谈恋爱,还是和别人一起联手创业,找到靠谱的人太重要了.作家雾满拦江在一篇文章里说,靠谱的人应该满足一下几个特点:
-1.有过人的智力,能够准确预判没做过的事情的周期. 通常做好一件事情需要很长时间,不靠谱的人总觉得很快就会做好.而做事儿靠谱的人,会尽量把事情想得最困难,而且仍然放手去做的人.
-2.不确定式思维,做事不求一个直线结果. 做人的人品要有确定性,这样大家才放心.但一个人做事儿的方法和方向,要有不确定性.市场变化很快,很可能开始打算做奶嘴的厂子最后去做了避孕套. 如果一个人这样想问题,那么说明这人脑子比较清醒,知道自己在做什么,而且不钻牛角尖,能够随机应变.就是个靠谱的做事儿伙伴.
-3.思维周密,喜欢布闲棋. 这样的人布局具有周密性,在一个很长的周期里,肯定需要很多的资源和部件,说不定他之前做的什么布置在后来就发生巨大的作用了.
-4.接受因人成事,不拘泥.
-5.对人无成见,始终在路上.人总是没有确定的形态,总是要有一个发展的眼光看待别人,才有利于个人发展.
-6.具有自己的实用型知识体系,化繁为简,容纳异端.这样的人爱读书还不死读书,能够善于整合观点,有自己的思维体系,能把复杂的问题简单化,并且跳出现实的条条框框.
-  </p>
-
-  
-</article>
-
-  
-
-  
 <nav class="pagination" role="pagination">
   
-  <span>1 / 7</span>
+  <i class="fa fa-chevron-left"></i>
   
-  <a href="https://wizarot.me/page/2/"><i class="fa fa-angle-double-right"></i></a>
+  <span>&nbsp;1 / 7&nbsp;</span>
+  
+  <a href="https://wizarot.me/page/2/"><i class="fa fa-chevron-right"></i></a>
   
 </nav>
 
@@ -601,19 +642,26 @@ MySQL has support for full-text indexing and searching: A full-text index in MyS
 
 </div>
 </div>
-<script src="https://wizarot.mejs/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/menus.js"></script>
 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74990530-1', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-74990530-1', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
+
+
+
+
 
 
 

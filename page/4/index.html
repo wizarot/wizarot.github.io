@@ -5,19 +5,21 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.20.7" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   <title>Wizarot Site 记录点平时写的东西</title>
 
+    
+
   
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -30,21 +32,33 @@
   <link rel="stylesheet" href="https://wizarot.me/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
   
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西" href="https://wizarot.meindex.xml" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="Wizarot Site 记录点平时写的东西"
+    href='https://wizarot.me/index.xml' />
+  
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="https://wizarot.meimg/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://wizarot.me/img/favicon.ico" type="image/x-icon" />
+
+  
+  
 
 </head>
 
@@ -68,6 +82,12 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="https://wizarot.me/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
@@ -78,39 +98,16 @@
       
         </li>
       
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://wizarot.me/"><i class='fa fa-home fa-fw'></i>Home</a>
-      
-        </li>
-      
     </ul>
   </div>
 
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://wizarot.meindex.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-
-    
-
-    
-
-    
-
-    
-
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://weibo.com/wizarot" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+      <a class="pure-menu-link" href='https://wizarot.me/index.xml'><i
+          class="fas fa-rss"></i>RSS</a>
     </li>
     
 
@@ -125,6 +122,26 @@
     
 
     
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://weibo.com/wizarot" rel="me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -146,8 +163,32 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/wizarot" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+      <a class="pure-menu-link" href="https://github.com/wizarot" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
     </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://gitlab.com/*" rel="me" target="_blank"><i class="fab fa-gitlab fa-fw"></i>GitLab</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -158,11 +199,11 @@
 </div>
 
 
-  <div class="pure-g">
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div>
+  <div class="small-print">
     <small>&copy; 2020. All rights reserved.</small>
   </div>
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
     <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
   </div>
@@ -180,6 +221,53 @@
 </div>
 
 <div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://wizarot.me/post/2016-04-27/">怎么掌握高水平的判断力</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>27 Apr 2016, 15:50</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  咱们为人处世,都需要一些判断力,尤其是你的判断和其他人不同的时候就更需要弄清楚哪种判断更有价值. 那么怎么才能掌握高水平的判断力呢?
+作家:雾满拦江 对这件事的一些看法:
+通常我们的判断力有6个层次: 情绪判断;偏好判断;利益判断;规则判断;价值判断;是非判断; 对不同的问题,判断的标准也会不同.
+情绪判断: 基于释放情绪的判断.例如,一个小孩儿阿姨给块饼干,他觉得不够吃于是哭闹,但阿姨为了平息他的情绪又给了一块,结果孩子觉得太多吃不利继续哭闹~ 但可惜的是,这样的情绪判断并不仅仅出现在小孩子身上,很多大人也是由着性子来,处理问题的时候情绪化.
+偏好判断: 有个南方人,他大学室友都是北方人,经常在他面前谈论饺子多好吃,可他没法插上话觉得挺烦的,有朋友给他支了一招,让他在他们下次讨论饺子的时候问大家,觉得什么馅的饺子最好吃,结果呢北方阵营立刻土崩瓦解,各有各的爱好谁都不服谁,结果再也没人讨论这个话题了. 这就是典型的偏好判断,很多人的评判标准都建立在自我偏好上,甚至有些人还会拿自己的口味,审美和习惯去评判别的人和事儿.
+所以呢,情绪判断和偏好判断都是非常主观的,不成熟的判断方式.想要有成熟的判断,就需要更高层次的判断方式. 主观看法不重要,客观存在才是重点.
+利益判断: 就是看一件事儿是不是对自己有利,然后进行判断.关于利益判断,我们是不应该来评判谁是谁非的. 例如:社区得到一笔钱,需要考虑选择建个儿童乐园还是建老年活动中心,这时候每个人的选择就不同了,家有孩子就支持儿童乐园,有老人的就支持老年活动中心.每个人的判断都基于自己的利益考虑,不管个人的观点是什么,他的选择都是堂堂正正.
+规则判断: 建立在对利益判断的经验基础之上. 世界上没有规则就没有了公正,但是有时候规则也是互相冲突的. 例如,一个西瓜大赛,请瓜农指定比赛的评判标准,这时候大家对规则就有了不同的判断,有人觉得西瓜大最好,有的说西瓜甜是标准等等&hellip;..每个人都可能有不同的规则标准,没统一的标准那就麻烦了.
+价值判断: 指的就是三观中的价值观,是一种成熟的判断标准.
+是非判断: 价值判断中最基本的,判断是非善恶的标准. 大多数人进行是非判断还是有明确标准的,比如不能抢银行什么的. 但也有人的是非判断上并不是因为抢银行不对才不抢银行,而是仅仅怕抢银行的后续惩罚而已.
+尽量使用高层次的判断力就对了.
+那么面对不同层次判断力的人,要如何应对呢?
+对于情绪判断的人,要包容,不要和他一样不理性,坚持理性保持头脑清晰. 对于偏好判断的人,也要包容,因为我们自己也经常会做一些偏好判断,只是程度不同. 对于利益判断,这样的人正处于成熟阶段,这样的人极易走极端,所以不要骂他们自私,给他们机会,相信他们很快就会成熟起来. 对于使用规则和价值判断的人,就要像他们学习了,哪怕只学到一点也都是赚了. 对于是非判断,要知道这是我们做事情的依据,告诉我们什么该做什么不该做. 价值判断告诉我们该怎么做.
+  </p>
+
+  
+</article>
+
   
     <article>
   <header>
@@ -253,7 +341,7 @@
 1.询问-反馈: 和同事保持良好的关系,从他们那里持续获取自己工作表现的反馈. 沟通过程中一定要对事不对人,不要总是反驳对方为自己的表现辩解,彻底放下自己的心理防御机制,要相信自己的工作方法和思路一定是有改进的地方.
 2.尝试新方法: 每当遇到新挑战,都要问问自己,有什么方法是自己没有尝试过的?
 3.寻找连接点: 努力尝试把自己擅长的专业知识和技能努力迁移到别的领域,哪怕看起来关系并不大.
-4.进行&rdquo;复盘&rdquo;: 对工作经验的系统复盘,可以显著提高学习能力.要经常问自己,我从这次的经验中学到了什么?这样做的结果和我预料的结果有什么不同?
+4.进行&quot;复盘&rdquo;: 对工作经验的系统复盘,可以显著提高学习能力.要经常问自己,我从这次的经验中学到了什么?这样做的结果和我预料的结果有什么不同?
 未来的成功与否,已经不再决定于你手中有什么资源,而在于你是否能够快速的学习新知识,是否拥有开放性的理念.
   </p>
 
@@ -290,7 +378,7 @@
 
   <p>
   预测未来事情的走向,并不是专家或者占星术什么的才能做的事儿,事实上,如果你能掌握好预测的套路,那么你也可以成为预测专家. 具体什么套路呢?
-首先,要分解问题.从而得知哪些是已知的信息哪些是未知的信息. 举个例子,有人问物理学家费米,芝加哥有多少钢琴调音师呢? 这个问题可以分解为几个小问题: a.芝加哥有多少钢琴;b.钢琴每年要调几次音;c.每次调音需要多少时间;d.调音师平均每年工作多少时间; 然后一个个回答这些问题. a.芝加哥钢琴总数不清楚,但然后大约250万,大约2%的人有钢琴,那么钢琴总数就是5万钢琴; b.钢琴通常每年需要1次调音; c.每次调音时间大约2小时;d.按照每天8小时工作计算,每年工作2000小时. 但是调音师上门服务,路上时间大约要花费400小时. 所以每年工作1600小时. 所以大约可以计算出 50000*1*2 / 1600 =63 所以大概有63位调音师. 后来费米找来调音师的名单,上面一共有83人,其中有些还是重复的.因此这个预测已经算相当精准了.
+首先,要分解问题.从而得知哪些是已知的信息哪些是未知的信息. 举个例子,有人问物理学家费米,芝加哥有多少钢琴调音师呢? 这个问题可以分解为几个小问题: a.芝加哥有多少钢琴;b.钢琴每年要调几次音;c.每次调音需要多少时间;d.调音师平均每年工作多少时间; 然后一个个回答这些问题. a.芝加哥钢琴总数不清楚,但然后大约250万,大约2%的人有钢琴,那么钢琴总数就是5万钢琴; b.钢琴通常每年需要1次调音; c.每次调音时间大约2小时;d.按照每天8小时工作计算,每年工作2000小时. 但是调音师上门服务,路上时间大约要花费400小时. 所以每年工作1600小时. 所以大约可以计算出 5000012 / 1600 =63 所以大概有63位调音师. 后来费米找来调音师的名单,上面一共有83人,其中有些还是重复的.因此这个预测已经算相当精准了.
 第二,从外部视角入手来分析问题. 再举个例子,小王是一家公司的记账员,他爱人在幼儿园做兼职.有孩子上5岁,住的房子不大,小王父亲过世了,母亲和他们一起住.请问他们家养一只狗的可能性有多大? 听了这个大多数人都被细节锁吸引了.可能会考虑家庭收入,或者有孩子之类的,可以讲出一个逻辑清晰的推理故事. 但是,预测专家可不会这样考虑问题,他们会从”外部视角”考虑问题. 会找一找在中国养狗家庭的比例占多少,通过外部视角考虑问题通常会更靠谱. 但普通人通常会从内部视角考虑问题,从细节出发来预测,虽然这样可以容易的讲一个逻辑清晰的故事但是这样实际上很难保证预测的准确性了.
 第三,从外部视角转移到内部视角,对概率进行调整.外部视角可以得出一个普遍性的概率,这时候就应该再结合内部视角的特殊性来分析具体情况,对普遍概率进行调整,内外部结合得出更靠谱的结论. 从外部视角考虑问题,实际是为了防止”锚定效应”,所谓锚定就是最开始我们估算的大概概率,然后根据细节调整这个概率,但开始的这个值也就是”锚”是不会动的,如果开始这个锚值就差的很离谱那么以后的调整也很难准确了.
   </p>
@@ -368,11 +456,11 @@
   </header>
 
   <p>
-   公众号: 领教工坊有篇文章讲述了一点关于提问和回答问题的学问. 很多时候仅仅给出问题的正确答案并没有什么意义.而且可能对方还少了一次学习的机会.提问,要提能让自己学到东西的问题;回答的时候,要提醒对方别太关注答案,让他自己去思考问题.
+  公众号: 领教工坊有篇文章讲述了一点关于提问和回答问题的学问. 很多时候仅仅给出问题的正确答案并没有什么意义.而且可能对方还少了一次学习的机会.提问,要提能让自己学到东西的问题;回答的时候,要提醒对方别太关注答案,让他自己去思考问题.
 提问要点: 1.提问时,应该尽量使用”怎么”代替”为什么”,例如:女朋友闹分手,你要问为什么,那么对方八成直接告诉你一个表面的理由.但是这时候你如果改问 “我们是怎么走到这一步的?&ldquo;这样虽然未必会挽回感情,但至少可以从失败经历中学到东西.
 2.善于学习的人,从标准层面提问问题. 例如,不问对方怎么看待这件事情的,而问对方看待这类问题都考虑哪些因素. 追女孩要试着问对方,”你选择男朋友的标准是什么?&rdquo;
 提出一个好问题,不但促进学习,而且可以增加学习的能力.
-回答问题要点: 1.要引导对方学习,最重要的一点: “别直接给对方正确答案”. 通常正确答案都是知识性的事实,而最重要的学习能力是&rdquo;对未知的探索”和”把知识同自己联系到一起”的能力. 很多人都被应试教育和其它一些东西教育的,变成了一台”知识收集器”,但实际上这只会引起”知识消化不良”. 知识只有同自己联系起来,才能得到解决问题的能力.
+回答问题要点: 1.要引导对方学习,最重要的一点: “别直接给对方正确答案”. 通常正确答案都是知识性的事实,而最重要的学习能力是&quot;对未知的探索”和”把知识同自己联系到一起”的能力. 很多人都被应试教育和其它一些东西教育的,变成了一台”知识收集器”,但实际上这只会引起”知识消化不良”. 知识只有同自己联系起来,才能得到解决问题的能力.
 2.举个例子:如果孩子问你为什么水会流动? 那么仅仅回答因为水是液体这一事实并没有太大效果.而可以考虑回答说,我们可以上网搜索下原因;或者发散问题,如水变成冰为什么就不会流动了呢?或者除了水还有什么会流动呢? 培养思考问题的方法和解决问题的思路. 说说怎么才能把这个问题用于实践中.
 不断思考和深化问题,比答案本身重要的多;尽力消化知识,比知识本身重要的多. 
   </p>
@@ -537,8 +625,8 @@
 1.知识的牢笼: 因为掌握了一些知识,有时候反而会因为先入为主影响了判断.我们大多数时候不能做到换位思考.
 2.思维的牢笼: 就是思维定式. 摆脱它的方法有三种:
  a.把所有问题加上”可能”两个字;
-b.出声思考,要把想法说出来,因为出声用语言表达更容易发散思维;
-c.和别人讨论,大家的思维边界不同,可以互相参照.
+  b.出声思考,要把想法说出来,因为出声用语言表达更容易发散思维;
+  c.和别人讨论,大家的思维边界不同,可以互相参照.
  3.情绪的牢笼: 在不同情绪之下,人会在不知不觉中做出不同的事物认知和行动决定.并且不觉得这是被外在因素影响获得的结果.
   </p>
 
@@ -546,57 +634,17 @@ c.和别人讨论,大家的思维边界不同,可以互相参照.
 </article>
 
   
-    <article>
-  <header>
-    <h2><a href="https://wizarot.me/post/2016-04-17/">怎么讲过去的故事决定你的未来</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>17 Apr 2016, 20:55</time>
-  </div>
 
   
 
-  
-  
-  
-  
 
-  
-  
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  参见心理学疗法: 叙事治疗
- 大多数情况下,我们遇到突发事件会手忙脚乱. 但也有这样的人,他们即便身处特别混乱的环境里也能有条不紊的处理很多任务.他们怎么做到的呢? 心理学对这样的人有个观点,他们本质上是很会讲故事的人,他们会把自己的生活讲给自己听. 他们讲那些已经发生的和即将发生的事儿. 他们事先都将这些事儿在脑子里规划了一遍,所以这事儿实际发生了他们就能迅速将现实和脑子里的剧本做个对比,找出它们哪里不一样.这样就能知道哪里应当多分配注意力处理,哪里只需要按照剧本来演出即可. 所以给自己讲故事就是他们处理多重压力的诀窍.
-讲故事不仅可以给我们准备好应急预案,还能改变我们的人生.
-1.听故事帮我们找到了原因,我们天生就需要给这个世界的一切找一个理由,让事情说得通.能解释为什么有些事情会发生在我们身上,能解释清原因我们才有安全感,这是一种心理需要. 所以算命,占卜才这么有市场,佛家的因果理论才有人信. 而讲故事就是一种找原因的手段,无论是讲给别人听,还是说给自己听,都能让所有的事情说得通.
-2.人生故事构成了我们的人格.每个人对自己的人生记忆,不是记流水账.我们会把那些有意义的事儿打散了,然后重组,变成一个有开头有高潮有结果的完整故事.而我们人生中会发生无数的事件,在讲我们人生故事的时候,我们会选择哪些事儿作为素材,用什么方式来讲,怎么排列他们的重要程度,怎么理解它们之间的因果关系. 这些都能反映出”我”是个什么样的人. 也就是说,故事使我们人格的重要组成部分. 而且我们会对一切事情进行自传式因果推论.
-那么用什么方式讲故事人生会更幸福呢?
- 我们自己叙事通常有两种方法: 挽救型 VS 污染型.
- 挽救型故事通常都有一个糟糕的开头,但最后都是完美的结局,主人公都是单枪匹马的英雄,他们相信无论世界多危险,但总有好的一面.我能让世界变得更好. 污染型故事正好相反,就算故事开头很美满,但总不会有好结局. 用挽救型叙事的人,更容易从糟糕的情况下找到出路,也就更容易有个比较幸福的人生. 当然这个也不是任何时候都管用,那些长期生活在绝望里,经历巨大创伤的人给自己灌再多的鸡汤也没用. 他们必须接受自己的无能为力,不给自己太高的期待,允许自己过得不如别人才行.
-  </p>
-
-  
-</article>
-
-  
-
-  
 <nav class="pagination" role="pagination">
   
-  <a href="https://wizarot.me/page/3/"><i class="fa fa-angle-double-left"></i></a>
+  <a href="https://wizarot.me/page/3/"><i class="fa fa-chevron-left"></i></a>
   
-  <span>4 / 7</span>
+  <span>&nbsp;4 / 7&nbsp;</span>
   
-  <a href="https://wizarot.me/page/5/"><i class="fa fa-angle-double-right"></i></a>
+  <a href="https://wizarot.me/page/5/"><i class="fa fa-chevron-right"></i></a>
   
 </nav>
 
@@ -606,19 +654,26 @@ c.和别人讨论,大家的思维边界不同,可以互相参照.
 
 </div>
 </div>
-<script src="https://wizarot.mejs/ui.js"></script>
+<script src="https://wizarot.me/js/ui.js"></script>
+<script src="https://wizarot.me/js/menus.js"></script>
 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74990530-1', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-74990530-1', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
+
+
+
+
 
 
 
